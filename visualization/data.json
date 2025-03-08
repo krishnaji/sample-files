@@ -1,0 +1,483 @@
+[
+    {
+        "scene": {
+            "id": "26ece0cc-7109-47a4-874f-05ff7bbe867f",
+            "scene_number": 0,
+            "location": "A bustling, modern train station in a major city. Grand Central Terminal-esque.",
+            "description": "Amidst the rush hour crowd, ANNA (20s), looks overwhelmed but determined. She clutches a worn map and a small backpack, navigating through the sea of commuters. The station is filled with digital displays showing train schedules, advertisements, and news updates. People are rushing to catch their trains, talking on phones, or reading newspapers. A street musician plays a lively tune near a coffee stand, adding to the cacophony of sounds.",
+            "image_path": "path/to/train_station_scene.jpg",
+            "time_of_day": "Late Afternoon (5:00 PM)",
+            "lighting": "A mix of natural light streaming through the large arched windows and artificial light from the overhead fixtures and digital displays. The overall lighting is bright and slightly warm, reflecting the energy of the station.",
+            "camera_setup": "A wide shot establishes the vastness of the train station and Anna's small figure within it. The camera then zooms in to focus on Anna's face, capturing her determined expression. Quick cuts show glimpses of the surrounding crowd and the various activities happening in the station. A tracking shot follows Anna as she moves through the crowd.",
+            "mood": "Energetic, slightly chaotic, but with an undercurrent of anticipation and determination. Anna's internal mood is a mix of anxiety and excitement as she embarks on her adventure.",
+            "setting_details": "The station is a blend of classic architecture and modern technology. There are ticket booths, information kiosks, and various shops and restaurants. Graffiti art adorns some of the less visible walls, adding a touch of urban grit. The air is filled with the smell of coffee, exhaust fumes, and the faint scent of distant destinations. Small details, such as a lost child crying for their parent or a couple sharing a quick kiss, add to the realism of the scene."
+        },
+        "characters": [
+            {
+                "id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                "name": "Anya Petrova",
+                "description": "Anya is a young woman with fiery red hair, often braided intricately with small, colorful beads. She has striking emerald green eyes and a smattering of freckles across her nose. She is lithe and agile, built for climbing and running, and typically wears practical, earth-toned clothing suitable for adventuring.",
+                "personality_traits": [
+                    "Curious",
+                    "Brave",
+                    "Impulsive",
+                    "Loyal"
+                ]
+            },
+            {
+                "id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                "name": "Barnaby 'Barney' Butterfield",
+                "description": "Barney is a stout, middle-aged inventor with a perpetually grease-stained face and a wild, unkempt beard. He has thick spectacles perched on his nose and wears a multi-pocketed vest filled with various gadgets and tools. His clothing is often mismatched and slightly singed from accidental explosions in his workshop.",
+                "personality_traits": [
+                    "Eccentric",
+                    "Intelligent",
+                    "Anxious",
+                    "Helpful"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "5ac04856-c2a2-47d5-9a83-0bc4c432c0e7",
+                "description": "Suddenly, a frantic BARNABY 'BARNEY' BUTTERFIELD (50s) bursts through the crowd, scattering commuters like bowling pins. His goggles are askew, and smoke curls from his vest pockets. He's clutching a bizarre contraption of gears, wires, and glowing tubes. \"Out of the way!\" he bellows, his voice cracking with urgency. Anya, startled but intrigued, watches as Barney stumbles, nearly dropping his invention. A small, intricately carved wooden bird falls from his vest and lands at Anya's feet. Barney, oblivious, continues his chaotic dash, disappearing into the throng. Anya hesitates, a flicker of curiosity in her emerald eyes. She glances at the retreating figure, then down at the wooden bird. It feels warm to the touch, and a faint hum vibrates through her fingertips. A decision solidifies within her. This chance encounter feels like more than just a coincidence; it's a sign. She tucks the bird into her backpack, a newfound resolve hardening her gaze. The map now feels less like a guide and more like a treasure map, promising adventure beyond the confines of the mundane station.",
+                "timestamp": 0.0,
+                "camera_angle": "Low angle, focusing on Anya's face as she picks up the wooden bird, then panning up to follow Barney's chaotic exit.",
+                "scene_id": "26ece0cc-7109-47a4-874f-05ff7bbe867f",
+                "image_path": "images/event_5ac04856-c2a2-47d5-9a83-0bc4c432c0e7.png",
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_5ac04856-c2a2-47d5-9a83-0bc4c432c0e7_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_5ac04856-c2a2-47d5-9a83-0bc4c432c0e7_frame.png",
+                "dialogues": [
+                    {
+                        "id": "9cff6d00-3ae5-4773-9601-ea32690a4147",
+                        "text": "Out of the way!",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "urgent",
+                        "event_id": "5ac04856-c2a2-47d5-9a83-0bc4c432c0e7",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    }
+                ]
+            },
+            {
+                "id": "e162c7c9-0021-4863-8658-cfe49a7bd150",
+                "description": "Anya, now emboldened by her decision, consults the worn map again. The digital displays flash advertisements, but she ignores them, her focus laser-locked on the faded lines and cryptic symbols. She traces a route with her finger, her brow furrowed in concentration. She feels a pull, an undeniable sense of destiny guiding her. Her heart pounds with anticipation, a mixture of excitement and trepidation swirling within her. The map leads her out of the bustling station and into a narrow, cobblestone alleyway, barely wider than her shoulders. The air grows cooler, carrying the scent of damp stone and forgotten secrets. Graffiti covers the walls, a vibrant tapestry of urban art. She pauses, feeling a strange energy emanating from the alley. It's as if the city itself is whispering to her, beckoning her deeper into its hidden depths. She takes a deep breath, steeling her resolve. This is it. The beginning of her adventure. She steps into the shadows, the wooden bird nestled safely in her backpack, a silent promise of the journey ahead.",
+                "timestamp": 40.6,
+                "camera_angle": "Low angle, slightly behind Anya, showing her entering the alleyway, emphasizing the imposing height of the buildings and the depth of the shadows.",
+                "scene_id": "26ece0cc-7109-47a4-874f-05ff7bbe867f",
+                "image_path": null,
+                "sound_cues": "[\"whispering\"]",
+                "video_paths": [
+                    "videos/event_e162c7c9-0021-4863-8658-cfe49a7bd150_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_e162c7c9-0021-4863-8658-cfe49a7bd150_frame.png",
+                "dialogues": [
+                    {
+                        "id": "01a7800b-9ffb-4df6-a05a-a2a67285d7bc",
+                        "text": "I will. Thanks, Barney.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "grateful",
+                        "event_id": "e162c7c9-0021-4863-8658-cfe49a7bd150",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "08da44ca-18bb-4f96-ac3d-10c2437544cc",
+                        "text": "Alright, but shout if you need me!",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "worried",
+                        "event_id": "e162c7c9-0021-4863-8658-cfe49a7bd150",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "6f5df5dc-d012-431e-b155-bfd00d08618e",
+                        "text": "Positive, Barney. This map... it feels right.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "determined",
+                        "event_id": "e162c7c9-0021-4863-8658-cfe49a7bd150",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "738f519f-72b1-46c5-955d-a480bd0ccd7d",
+                        "text": "Anya, are you sure about this?",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "concerned",
+                        "event_id": "e162c7c9-0021-4863-8658-cfe49a7bd150",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    }
+                ]
+            },
+            {
+                "id": "bb0b627e-ed0a-492b-8758-82fde013637c",
+                "description": "Deeper into the alley, Anya finds herself in a hidden courtyard. The cobblestones are slick with moisture, reflecting the dim light filtering from above. In the center stands an ancient, gnarled oak tree, its branches reaching skyward like skeletal arms. The air hums with an almost palpable energy. As Anya approaches the tree, a figure emerges from the shadows \u2013 BARNABY 'BARNEY' BUTTERFIELD, tinkering with a strange contraption attached to the tree's trunk. Sparks fly as he adjusts a series of gears and wires. He looks up, startled by Anya's presence, his grease-stained face creasing into a mixture of surprise and suspicion. \"Well, now, who might you be? And what brings you to my little sanctuary?\" he asks, his voice raspy and tinged with a hint of madness. Anya, though initially taken aback by his sudden appearance, quickly regains her composure. \"I'm Anya,\" she replies, her voice clear and steady. \"I'm looking for something... something hidden.\" Barney raises a skeptical eyebrow, his eyes gleaming behind his thick spectacles. \"Hidden, you say? Everything's hidden, girl, if you don't know where to look. What is it you seek?\"",
+                "timestamp": 82.0,
+                "camera_angle": "Medium shot, focusing on Anya and Barney, with the gnarled oak tree looming in the background. The camera slightly favors Anya, suggesting she is the protagonist.",
+                "scene_id": "26ece0cc-7109-47a4-874f-05ff7bbe867f",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_bb0b627e-ed0a-492b-8758-82fde013637c_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_bb0b627e-ed0a-492b-8758-82fde013637c_frame.png",
+                "dialogues": [
+                    {
+                        "id": "85931a68-01ab-4062-8032-0cbc294c6b5a",
+                        "text": "Hidden, you say? Everything's hidden, girl, if you don't know where to look.",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "curious",
+                        "event_id": "bb0b627e-ed0a-492b-8758-82fde013637c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "a390eb18-d4cf-491f-83ab-0572beb1f1f1",
+                        "text": "That's need-to-know information.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "guarded",
+                        "event_id": "bb0b627e-ed0a-492b-8758-82fde013637c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "b255e859-1074-46ac-9ec9-f7ad56796813",
+                        "text": "I'm Anya. I'm looking for something... something hidden.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "determined",
+                        "event_id": "bb0b627e-ed0a-492b-8758-82fde013637c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "b92bb300-a743-475a-9f04-b050f0b717d9",
+                        "text": "What is it you seek?",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "inquisitive",
+                        "event_id": "bb0b627e-ed0a-492b-8758-82fde013637c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    }
+                ]
+            },
+            {
+                "id": "e4451e3d-2a16-4a36-82e4-3f57e2d00edd",
+                "description": "\"Something that belongs to my family,\" Anya clarifies, stepping closer to Barney and the oak. Her gaze sweeps over the strange device he's fiddling with, a tangle of brass and copper that seems to pulse with a faint inner light. Barney squints at her, his suspicion slowly melting into curiosity. He wipes his greasy hands on his already-filthy vest. \"Family, eh? And what makes you think your family's trinket is tangled up with my arboreal amplifier?\" He gestures to the device with a flourish. Anya hesitates, a flicker of doubt crossing her face. Could she trust this eccentric inventor? But the map had led her here, and the energy radiating from the tree felt undeniably significant. \"I have a map... an old map. It led me to this tree. It speaks of a 'heartwood haven,' a place where secrets are kept safe.\" She pulls the worn map from her backpack, its edges frayed and yellowed with age. As she unfolds it, the faint scent of aged parchment fills the air. Barney leans in, his eyes widening behind his spectacles as he studies the map. He traces a finger along the faded lines and cryptic symbols. A low whistle escapes his lips. \"Well, I'll be... This is older than my Great Aunt Mildred's dentures! Heartwood haven, you say? Fascinating!\"",
+                "timestamp": 125.0,
+                "camera_angle": "Medium shot, focusing on Anya and Barney as they examine the map, with the ancient oak tree looming in the background.",
+                "scene_id": "26ece0cc-7109-47a4-874f-05ff7bbe867f",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_e4451e3d-2a16-4a36-82e4-3f57e2d00edd_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_e4451e3d-2a16-4a36-82e4-3f57e2d00edd_frame.png",
+                "dialogues": [
+                    {
+                        "id": "08876366-9a63-4cf2-b26f-6ae3e39b6470",
+                        "text": "Well, let's see if we can crank up the juice, shall we?",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "mischievous",
+                        "event_id": "e4451e3d-2a16-4a36-82e4-3f57e2d00edd",
+                        "type": "spoken",
+                        "action": "Barney throws a switch on the device.",
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "14ef9bd8-d2b3-4877-88e6-6b2ed0467d76",
+                        "text": "Fascinating, isn't it?",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "curious",
+                        "event_id": "e4451e3d-2a16-4a36-82e4-3f57e2d00edd",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "64dc7207-9c62-4ce3-9c4e-f88b2a002699",
+                        "text": "Energy that could lead me to what I'm looking for.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "determined",
+                        "event_id": "e4451e3d-2a16-4a36-82e4-3f57e2d00edd",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "ac9542ac-f56f-453f-ad77-928b99e3ed39",
+                        "text": "Could be! This old oak is humming with energy.",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "excited",
+                        "event_id": "e4451e3d-2a16-4a36-82e4-3f57e2d00edd",
+                        "type": "spoken",
+                        "action": "Barney taps the device with a wrench, causing it to spark.",
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "df834412-fed9-4572-900b-bdcc5e5e3a40",
+                        "text": "So, you believe this 'arboreal amplifier' of yours is connected to my family's map?",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "hopeful",
+                        "event_id": "e4451e3d-2a16-4a36-82e4-3f57e2d00edd",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    }
+                ]
+            },
+            {
+                "id": "52db01a7-3158-4e2d-9537-6be353017926",
+                "description": "Barney, utterly captivated, snatches the map from Anya's hands, holding it close to his spectacles. He mutters to himself, tracing the faded lines with a grime-covered finger. \"Heartwood Haven... the legends were true! I thought it was just old wives' tales, spun to frighten children from climbing trees!\" He glances back at Anya, his eyes gleaming with newfound excitement. \"This changes everything! My arboreal amplifier... it's not just about boosting the tree's\u2026 uh\u2026 'arboreal essence.' It's a key! A key to unlocking the Haven!\" He rushes over to the oak, his multi-pocketed vest jangling with each step. He begins frantically adjusting dials and switches on his device, his brow furrowed in concentration. A low hum emanates from the machine, growing steadily louder. Anya watches him, a mixture of hope and apprehension swirling within her. Was this inventor truly on the verge of a breakthrough, or was she about to witness another one of his 'accidental explosions'? A sudden surge of energy courses through the tree, causing its leaves to rustle violently, even though there is no wind. The air crackles with electricity. Barney shouts over the din, \"Stand back, lass! Things are about to get\u2026 rooty!\"",
+                "timestamp": 178.2,
+                "camera_angle": "Medium shot, focusing on Barney as he interacts with his device, with Anya observing him warily in the background. The camera should emphasize the energy crackling around the tree and the frantic movements of Barney's hands.",
+                "scene_id": "26ece0cc-7109-47a4-874f-05ff7bbe867f",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_52db01a7-3158-4e2d-9537-6be353017926_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_52db01a7-3158-4e2d-9537-6be353017926_frame.png",
+                "dialogues": [
+                    {
+                        "id": "38024b08-2f4a-455a-a9c1-f16571befead",
+                        "text": "Stand back, lass! Things are about to get\u2026 rooty!",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "excited",
+                        "event_id": "52db01a7-3158-4e2d-9537-6be353017926",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "3ecd6827-6694-41fb-984a-632ebca2a773",
+                        "text": "Just be careful, Barney! I'd rather not be turned into fertilizer today.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "worried",
+                        "event_id": "52db01a7-3158-4e2d-9537-6be353017926",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "4088d6ff-898f-47df-bd05-469444f1361c",
+                        "text": "Rooty? What does that even mean, Barney?",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "apprehensive",
+                        "event_id": "52db01a7-3158-4e2d-9537-6be353017926",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "scene": {
+            "id": "92050d0f-cd5b-4d02-8b79-455c6a3d8ba9",
+            "scene_number": 1,
+            "location": "Inside the Heartwood Haven - a vibrant, bioluminescent forest clearing.",
+            "description": "Anya and Barney stumble through a shimmering portal, landing softly on mossy ground. They find themselves in a clearing bathed in the ethereal glow of bioluminescent flora. Towering trees with glowing leaves form a natural cathedral, their roots intertwined and pulsing with light. Strange, colorful plants emit soft melodies, creating an enchanting soundscape. Small, winged creatures flit through the air, leaving trails of sparkling dust. In the center of the clearing, a crystal-clear pond reflects the vibrant canopy above. The air is thick with the scent of sweet nectar and damp earth.",
+            "image_path": "path/to/heartwood_clearing.jpg",
+            "time_of_day": "Twilight - an eternal, soft twilight.",
+            "lighting": "Bioluminescent - soft, glowing light emanating from the flora and fauna. The overall effect is magical and dreamlike.",
+            "camera_setup": "Wide shot - establishing the scale and beauty of the clearing. Slow, panning shots to showcase the bioluminescent details. Occasional close-ups on Anya and Barney's awestruck faces.",
+            "mood": "Wonder, awe, and a hint of trepidation. The beauty of the haven is undeniable, but there's also an underlying sense of mystery and the unknown.",
+            "setting_details": "The portal shimmers and closes behind Anya and Barney, leaving them stranded in the Heartwood Haven. They notice strange symbols etched into the bark of the trees, possibly a form of ancient writing. The air hums with a subtle energy, suggesting a powerful magical presence."
+        },
+        "characters": [
+            {
+                "id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                "name": "Anya Petrova",
+                "description": "Anya is a young woman with fiery red hair, often braided intricately with small, colorful beads. She has striking emerald green eyes and a smattering of freckles across her nose. She is lithe and agile, built for climbing and running, and typically wears practical, earth-toned clothing suitable for adventuring.",
+                "personality_traits": [
+                    "Curious",
+                    "Brave",
+                    "Impulsive",
+                    "Loyal"
+                ]
+            },
+            {
+                "id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                "name": "Barnaby 'Barney' Butterfield",
+                "description": "Barney is a stout, middle-aged inventor with a perpetually grease-stained face and a wild, unkempt beard. He has thick spectacles perched on his nose and wears a multi-pocketed vest filled with various gadgets and tools. His clothing is often mismatched and slightly singed from accidental explosions in his workshop.",
+                "personality_traits": [
+                    "Eccentric",
+                    "Intelligent",
+                    "Anxious",
+                    "Helpful"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "68da607a-09c7-4e0b-a6e4-e6f42472e4f7",
+                "description": "Anya gasps, her emerald eyes widening as she takes in the breathtaking panorama. \"Barney, look!\" she exclaims, her voice a hushed whisper of awe. Barney, adjusting his spectacles, peers around with a mixture of wonder and suspicion. He fumbles in his vest, pulling out a strange contraption with whirring gears and blinking lights. As he activates it, the device emits a series of beeps and clicks, then projects a holographic display showing fluctuating energy readings. He mutters to himself, \"Fascinating... the readings are off the charts! Some kind of dimensional anomaly...\" Anya, ever the pragmatist, cautiously approaches the crystal pond. She kneels, dipping a finger into the water. A shiver runs down her spine. The water feels strangely alive, buzzing with an unseen energy. Suddenly, a large, iridescent butterfly with wings like stained glass lands gently on her outstretched finger. Anya freezes, mesmerized by its beauty. It flutters its wings once, leaving a shimmering trail of golden dust, then takes flight, disappearing into the glowing foliage. Anya feels a surge of exhilaration mixed with trepidation. This place is unlike anything she's ever encountered.",
+                "timestamp": 0.0,
+                "camera_angle": "Medium shot, focusing on Anya's face as the butterfly lands on her finger, then panning slightly to include Barney in the background, tinkering with his device.",
+                "scene_id": "92050d0f-cd5b-4d02-8b79-455c6a3d8ba9",
+                "image_path": "images/event_68da607a-09c7-4e0b-a6e4-e6f42472e4f7.png",
+                "sound_cues": "[\"whispering\"]",
+                "video_paths": [
+                    "videos/event_68da607a-09c7-4e0b-a6e4-e6f42472e4f7_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_68da607a-09c7-4e0b-a6e4-e6f42472e4f7_frame.png",
+                "dialogues": [
+                    {
+                        "id": "7065e2a9-49a1-43c4-a4f9-485bbc709da3",
+                        "text": "\"Fascinating... the readings are off the charts! Some kind of dimensional anomaly...\"",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "wonder",
+                        "event_id": "68da607a-09c7-4e0b-a6e4-e6f42472e4f7",
+                        "type": "spoken",
+                        "action": "mutters to himself",
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "f954a4b9-9830-418f-a3d5-a58dcd1ba417",
+                        "text": "\"Barney, look!\"",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "awe",
+                        "event_id": "68da607a-09c7-4e0b-a6e4-e6f42472e4f7",
+                        "type": "spoken",
+                        "action": "exclaims, her voice a hushed whisper",
+                        "speaker_name": "Anya Petrova"
+                    }
+                ]
+            },
+            {
+                "id": "ce334b56-63c8-47d1-a0ab-db660691d953",
+                "description": "As the iridescent butterfly vanishes, a low, guttural growl reverberates through the clearing, instantly shattering the enchanting calm. Anya whirls around, her hand instinctively reaching for the small, intricately carved dagger sheathed at her hip. Barney, startled by the sound, nearly drops his gadget. The holographic display flickers erratically as he frantically tries to recalibrate it. From the shadows beneath the towering, glowing trees, two pairs of luminous eyes pierce the gloom. A creature unlike any they've ever seen emerges: a large, feline predator with sleek, obsidian fur that seems to absorb the light around it. Its eyes glow with an eerie, intelligent light, and its fangs are long and wickedly sharp. It stalks slowly into the clearing, its muscles bunching beneath its fur as it fixes its gaze on Anya. A second, smaller creature, perhaps a juvenile, peers out from behind the larger one, its eyes wide with curiosity and a hint of fear. Anya feels a primal surge of adrenaline. Her heart pounds in her chest as she assesses the threat. She knows, with chilling certainty, that this creature is not merely curious; it is hunting. Barney, still fiddling with his device, glances up and lets out a yelp of surprise. \"Good heavens! What is that thing?\" he exclaims, his voice trembling. He clutches his gadget like a shield, hoping it will offer some form of protection. The feline predator lets out another growl, a deep, resonant sound that vibrates through the very ground beneath their feet. It crouches low, preparing to pounce.",
+                "timestamp": 39.800000000000004,
+                "camera_angle": "Low angle, looking up at Anya and Barney from the perspective of the feline predator, emphasizing its size and menace. The glowing trees loom in the background, creating a sense of claustrophobia.",
+                "scene_id": "92050d0f-cd5b-4d02-8b79-455c6a3d8ba9",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": null,
+                "selected_frame_path": null,
+                "dialogues": [
+                    {
+                        "id": "960a633d-7014-4858-a117-e61bf0532b78",
+                        "text": "Stay behind me, Barney.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "determined",
+                        "event_id": "ce334b56-63c8-47d1-a0ab-db660691d953",
+                        "type": "spoken",
+                        "action": "Anya raises her dagger, the blade glinting in the faint light.",
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "c14c5151-01f7-4b0f-ba54-4dd24720be45",
+                        "text": "But... but what is it?",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "fear",
+                        "event_id": "ce334b56-63c8-47d1-a0ab-db660691d953",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "d8fc9e6f-8d00-4172-9d28-f3afc8243cee",
+                        "text": "Something very big and very hungry.",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "serious",
+                        "event_id": "ce334b56-63c8-47d1-a0ab-db660691d953",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "f5555309-4a13-4b6e-81bc-c81e7f436426",
+                        "text": "Good heavens! What is that thing?",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "surprise",
+                        "event_id": "ce334b56-63c8-47d1-a0ab-db660691d953",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    }
+                ]
+            },
+            {
+                "id": "c51775ca-685f-4dd4-aa6f-be2664957a55",
+                "description": "The obsidian feline, muscles coiled, unleashes a terrifying roar that echoes through the bioluminescent forest. Anya, adrenaline coursing through her veins, drops into a defensive stance, her dagger glinting in the ethereal light. She shifts her weight, ready to evade the creature's attack. She knows that a direct confrontation would be suicidal, given the creature's size and power. Her mind races, searching for any advantage, any weakness. Barney, paralyzed by fear, lets out a high-pitched squeak and stumbles backward, tripping over a gnarled root. His gadget clatters to the mossy ground, its holographic display shattering into a million pieces. The feline predator's glowing eyes narrow, its attention momentarily diverted by the clumsy inventor. It takes a step towards Barney, its massive paws sinking slightly into the soft earth. Anya seizes the opportunity. With a burst of speed, she darts forward, intending to draw the creature's attention back to herself. She yells, a sharp, piercing cry that cuts through the night. The juvenile feline, startled by Anya's sudden movement, whimpers and presses closer to its parent, burying its face in the larger creature's fur. The obsidian predator, its gaze snapping back to Anya, lets out another menacing growl. It seems torn between protecting its young and pursuing the perceived threat. Anya realizes she must act quickly, before the creature makes its choice. She glances around, desperately seeking a means of escape or a weapon more effective than her small dagger.",
+                "timestamp": 96.60000000000001,
+                "camera_angle": "Low angle, focusing on Anya's determined face as she prepares to confront the feline predator, with Barney a blurry, panicked figure in the background.",
+                "scene_id": "92050d0f-cd5b-4d02-8b79-455c6a3d8ba9",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": null,
+                "selected_frame_path": null,
+                "dialogues": [
+                    {
+                        "id": "5f27fbcc-d429-4425-875a-32a498862788",
+                        "text": "\"W-what? Distract it? With what?!\"",
+                        "speaker_id": "819bc23e-f2e3-4e3d-9fd1-3e898ab50a0a",
+                        "emotion": "panicked",
+                        "event_id": "c51775ca-685f-4dd4-aa6f-be2664957a55",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Barnaby 'Barney' Butterfield"
+                    },
+                    {
+                        "id": "d53bf780-237b-451b-a8b8-3af5c846c257",
+                        "text": "\"Barney, distract it!\"",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "urgent",
+                        "event_id": "c51775ca-685f-4dd4-aa6f-be2664957a55",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Anya Petrova"
+                    }
+                ]
+            },
+            {
+                "id": "2eba3d3f-a4da-45de-b6eb-14a1572c9172",
+                "description": "Anya, seeing the feline's hesitation, spots a cluster of large, glowing mushrooms nearby. An idea sparks in her mind. 'Barney, the mushrooms!' she shouts, hoping he understands. She gestures wildly towards the fungi. Barney, still trembling, looks in the direction Anya indicates. His eyes widen as he grasps her intent. He scrambles to his feet, his fear momentarily overridden by a surge of adrenaline. He rummages frantically through his vest, pulling out a small, metallic device with a focusing lens. Anya, meanwhile, begins a series of feints and dodges, trying to keep the obsidian feline's attention on herself. She moves erratically, using the glowing trees as cover, darting in and out of the shadows. The feline, frustrated by her agility, swipes its massive paw, tearing a chunk of bark from a nearby tree. Barney, finally ready, aims the device at the cluster of mushrooms. He presses a button, and a concentrated beam of light shoots out, bathing the fungi in intense illumination. The mushrooms react violently, emitting a cloud of phosphorescent spores. The spores drift towards the feline, enveloping it in a shimmering haze. The creature recoils, sneezing and shaking its head, clearly disoriented by the sudden burst of light and the irritating spores. The juvenile feline whimpers, burying its face deeper into its parent's fur. Anya, seeing her chance, grabs Barney's arm. 'Run!' she yells, pulling him towards a dense thicket of glowing vines.",
+                "timestamp": 150.20000000000002,
+                "camera_angle": "Wide shot, showing Anya and Barney in the foreground, the obsidian feline and its cub in the middle ground, and the glowing mushrooms in the background. The camera should emphasize the contrast between the bright, bioluminescent environment and the dark, menacing figure of the feline.",
+                "scene_id": "92050d0f-cd5b-4d02-8b79-455c6a3d8ba9",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_2eba3d3f-a4da-45de-b6eb-14a1572c9172_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_2eba3d3f-a4da-45de-b6eb-14a1572c9172_frame.png",
+                "dialogues": [
+                    {
+                        "id": "1118f232-ca85-4fb3-8871-4ecd825796ec",
+                        "text": "'Barney, the mushrooms!'",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "excited",
+                        "event_id": "2eba3d3f-a4da-45de-b6eb-14a1572c9172",
+                        "type": "spoken",
+                        "action": "She shouts, hoping he understands and gestures wildly towards the fungi.",
+                        "speaker_name": "Anya Petrova"
+                    },
+                    {
+                        "id": "896558a1-964a-4700-bc58-ed94947a6023",
+                        "text": "'Run!'",
+                        "speaker_id": "6caeb113-6074-4667-be63-0f3f02b34e17",
+                        "emotion": "urgent",
+                        "event_id": "2eba3d3f-a4da-45de-b6eb-14a1572c9172",
+                        "type": "spoken",
+                        "action": "Anya grabs Barney's arm.",
+                        "speaker_name": "Anya Petrova"
+                    }
+                ]
+            }
+        ]
+    }
+]
