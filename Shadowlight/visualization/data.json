@@ -1,0 +1,486 @@
+[
+    {
+        "scene": {
+            "id": "3fb28f38-a2fc-453c-af44-4d148b97eecb",
+            "scene_number": 0,
+            "location": "The King's Royal Garden",
+            "description": "A sprawling, meticulously maintained garden filled with exotic flowers and sculpted hedges. Fountains gurgle softly, and winding stone paths lead deeper into the greenery. In the center, a large, ornate gazebo stands overlooking a koi pond.",
+            "image_path": "path/to/garden_scene.jpg",
+            "time_of_day": "Late Afternoon",
+            "lighting": "Warm, golden sunlight filters through the trees, casting long shadows. The light is soft and diffused, creating a peaceful atmosphere.",
+            "camera_setup": "A wide shot establishes the grandeur of the garden. The camera then slowly pushes in towards the gazebo, where our protagonist is meeting with the King. Close-ups are used to capture the characters' expressions during their conversation.",
+            "mood": "Initially serene and hopeful, but with an undercurrent of tension as the scene progresses. The beauty of the garden contrasts with the weight of the decisions being discussed.",
+            "setting_details": "Rare orchids bloom in vibrant colors, and peacocks strut across the lawns. The air is filled with the sweet scent of jasmine and roses. Royal guards are discreetly positioned around the perimeter, ensuring the King's safety."
+        },
+        "characters": [
+            {
+                "id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                "name": "Elara",
+                "description": "Elara is a young woman in her early twenties, with a slender build and a determined gaze. She has long, wavy brown hair that she often keeps tied back, and striking green eyes that reflect her adventurous spirit. She typically wears practical, modern clothing suitable for exploring, but with a touch of personal style, like a colorful scarf or unique boots.",
+                "personality_traits": [
+                    "Resourceful",
+                    "Curious",
+                    "Brave",
+                    "Independent"
+                ]
+            },
+            {
+                "id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                "name": "King Theron",
+                "description": "King Theron is a regal figure in his late thirties. He has a strong, commanding presence, with broad shoulders and a confident posture. He has short, dark hair streaked with silver, and piercing blue eyes that convey both wisdom and authority. He is always seen wearing ornate royal attire, adorned with precious gems and intricate embroidery, reflecting his status as the ruler of the land.",
+                "personality_traits": [
+                    "Wise",
+                    "Just",
+                    "Protective",
+                    "Reserved"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "a42691fd-0cc5-4ce0-8918-008d41f2fe2d",
+                "description": "Elara, drawn by the allure of the gazebo, ventures further into the meticulously sculpted garden. The air hangs heavy with the intoxicating fragrance of exotic blooms. As she approaches the gazebo, the soft gurgle of the fountains intensifies, creating a tranquil symphony. Inside the gazebo, King Theron stands gazing pensively at the koi pond. His regal attire, usually a symbol of power, seems to weigh heavily on his shoulders. He appears lost in thought, his brow furrowed with worry. Elara hesitates at the entrance, unsure whether to intrude upon his solitude. She observes him for a moment, sensing a deep sadness emanating from the king. A koi, vibrant orange against the dark water, leaps from the pond, momentarily breaking the king's reverie. He sighs, a sound heavy with the weight of his responsibilities. Elara, emboldened by a surge of empathy, steps forward, her boots crunching softly on the stone path. She feels a mixture of trepidation and determination, unsure of what she will say but knowing she cannot simply stand by while he suffers in silence. \"Your Majesty?\" she says, her voice soft yet clear, cutting through the tranquil soundscape of the garden.",
+                "timestamp": 0.0,
+                "camera_angle": "Medium shot from behind Elara, focusing on King Theron's reaction as she speaks. The gazebo frames the shot, emphasizing the enclosed, intimate nature of the encounter.",
+                "scene_id": "3fb28f38-a2fc-453c-af44-4d148b97eecb",
+                "image_path": "images/event_a42691fd-0cc5-4ce0-8918-008d41f2fe2d.png",
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_a42691fd-0cc5-4ce0-8918-008d41f2fe2d_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_a42691fd-0cc5-4ce0-8918-008d41f2fe2d_frame.png",
+                "dialogues": [
+                    {
+                        "id": "5a35429d-2134-48e5-9bb1-016bb8ae6864",
+                        "text": "Who are you?",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "curious",
+                        "event_id": "a42691fd-0cc5-4ce0-8918-008d41f2fe2d",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "63b5ba1f-8d42-4ef1-a2e8-13004cf81924",
+                        "text": "Elara. I am just a traveler, passing through.",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "nervous",
+                        "event_id": "a42691fd-0cc5-4ce0-8918-008d41f2fe2d",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    },
+                    {
+                        "id": "9b4cd4d8-793e-4601-9b91-fc2e24ce5555",
+                        "text": "Your Majesty?",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "concerned",
+                        "event_id": "a42691fd-0cc5-4ce0-8918-008d41f2fe2d",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    }
+                ]
+            },
+            {
+                "id": "d80b0a58-0761-47ed-b4d2-558815b784f0",
+                "description": "King Theron turns, his blue eyes widening slightly in surprise as he focuses on Elara. The weight on his face doesn't dissipate, but a flicker of curiosity sparks within him. He straightens, the regal bearing returning to his posture as he assesses the young woman who dares to address him in his private sanctuary. He hadn't noticed her approach, so consumed was he by his worries. He wonders who she is and what brings her to him. \"Yes?\" he replies, his voice deep and resonant, carrying a hint of weariness. Elara steps fully into the gazebo, her green eyes meeting his. She can feel the power emanating from him, but also the vulnerability beneath the surface. She remembers stories of the king's wisdom and compassion, and hopes she can appeal to that side of him. She takes a deep breath, steeling her resolve. The scent of the exotic flowers swirls around them, a stark contrast to the heavy atmosphere of the gazebo. \"Your Majesty,\" she begins, her voice gaining strength, \"I couldn't help but notice your distress. Is there something I can do to help?\" Her heart pounds in her chest as she awaits his response, unsure whether he will welcome her intrusion or dismiss her as an impudent stranger. She knows her question is bold, perhaps even disrespectful, but she is driven by a genuine desire to alleviate his suffering. Theron studies her intently, searching her face for any sign of deceit or ulterior motive. He is accustomed to flattery and veiled requests, but there is something different about this young woman's gaze. He sees genuine concern, and a spark of something else he can't quite place. He hesitates, torn between his ingrained sense of privacy and a desperate need to unburden himself. Could this stranger possibly offer him solace, or even a solution to his problems? The koi pond gurgles softly, the only sound breaking the tense silence between them.",
+                "timestamp": 45.400000000000006,
+                "camera_angle": "Medium shot, focusing on the faces of Elara and King Theron, capturing the tension and emotions in their expressions. The ornate gazebo and koi pond are visible in the background, providing context to the scene.",
+                "scene_id": "3fb28f38-a2fc-453c-af44-4d148b97eecb",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_d80b0a58-0761-47ed-b4d2-558815b784f0_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_d80b0a58-0761-47ed-b4d2-558815b784f0_frame.png",
+                "dialogues": [
+                    {
+                        "id": "2817c17d-dab3-47d7-8950-fb92862a55e0",
+                        "text": "Your Majesty, I couldn't help but notice your distress. Is there something I can do to help?",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "concern",
+                        "event_id": "d80b0a58-0761-47ed-b4d2-558815b784f0",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    },
+                    {
+                        "id": "72f96abb-4262-4afc-be3d-12ea1b06cc3e",
+                        "text": "Yes?",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "weariness",
+                        "event_id": "d80b0a58-0761-47ed-b4d2-558815b784f0",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    }
+                ]
+            },
+            {
+                "id": "d320f589-0f1f-46eb-95da-1a4a5a9a8832",
+                "description": "Theron's gaze softens ever so slightly, a crack appearing in the regal facade he so carefully maintains. He lets out a sigh, the sound heavy with the weight of his responsibilities. The question hangs in the air, thick with unspoken anxieties. He looks out over the koi pond, watching the colorful fish glide effortlessly through the water, a stark contrast to the turmoil within him. He thinks about the prophecy, the encroaching darkness, and the immense pressure he feels to protect his kingdom. Could he confide in this stranger? He decides to test her. \"Help?\" he echoes, his voice laced with a hint of cynicism. \"What could you possibly do? The fate of the kingdom hangs in the balance, threatened by forces beyond your comprehension.\" He turns back to Elara, his eyes searching hers, gauging her reaction. He expects her to falter, to back down in the face of such daunting stakes. But Elara doesn't flinch. Instead, her green eyes burn with a fierce determination. She steps closer, her voice dropping to a near whisper. \"Then tell me,\" she urges, her hand reaching out tentatively towards his. \"Tell me what threatens your kingdom. I may not be a warrior or a sorceress, but I am resourceful, and I am not afraid.\" The scent of the exotic flowers intensifies, as if the garden itself is holding its breath, waiting for Theron's decision. He stares at her hand, hesitating for a moment before finally meeting her gaze once more. He sees not naivete, but a genuine willingness to help, a spark of hope in the face of despair. Perhaps, just perhaps, this young woman could be the key to saving his kingdom.",
+                "timestamp": 117.2,
+                "camera_angle": "Medium shot, focusing on the faces of Elara and King Theron as they engage in their intense conversation. The camera slowly zooms in on Elara's determined expression, highlighting her unwavering resolve.",
+                "scene_id": "3fb28f38-a2fc-453c-af44-4d148b97eecb",
+                "image_path": null,
+                "sound_cues": "[\"whispering\"]",
+                "video_paths": [
+                    "videos/event_d320f589-0f1f-46eb-95da-1a4a5a9a8832_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_d320f589-0f1f-46eb-95da-1a4a5a9a8832_frame.png",
+                "dialogues": [
+                    {
+                        "id": "70c013a2-07da-40f7-8bc5-e50cf3a63ac0",
+                        "text": "\"Help?\" he echoes, his voice laced with a hint of cynicism. \"What could you possibly do? The fate of the kingdom hangs in the balance, threatened by forces beyond your comprehension.\"",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "doubt",
+                        "event_id": "d320f589-0f1f-46eb-95da-1a4a5a9a8832",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "da8a92f0-1683-4a3a-bf57-8eb5a690d988",
+                        "text": "\"Then tell me,\" she urges, her hand reaching out tentatively towards his. \"Tell me what threatens your kingdom. I may not be a warrior or a sorceress, but I am resourceful, and I am not afraid.\"",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "determined",
+                        "event_id": "d320f589-0f1f-46eb-95da-1a4a5a9a8832",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "scene": {
+            "id": "ca2045ea-b350-461f-9953-7bf58a967621",
+            "scene_number": 1,
+            "location": "King Theron's War Room",
+            "description": "The War Room is a stark contrast to the lush gardens. It's a high-tech space hidden beneath the Royal Palace. Holographic maps shimmer above a large, circular table made of polished obsidian. Tactical data streams across multiple screens embedded in the walls. King Theron gestures towards the holographic display, his face grim. Elara stands beside him, absorbing the information with a focused intensity. Several royal advisors stand stiffly around the perimeter, their expressions a mix of concern and skepticism towards Elara's presence.",
+            "image_path": "path/to/war_room.jpg",
+            "time_of_day": "Late Afternoon",
+            "lighting": "Dim, with bright accents from the holographic displays and wall screens. The overall effect is a cool, strategic atmosphere.",
+            "camera_setup": "Opening shot: Wide angle, establishing the scale of the War Room and the holographic display. Transition to a close-up of King Theron's serious expression, then to Elara's determined gaze. Frequent cuts between the holographic map and the characters' reactions.",
+            "mood": "Tense, serious, and strategic. The atmosphere is heavy with the weight of the kingdom's impending crisis. A sense of urgency underscores every action.",
+            "setting_details": "Scattered around the room are historical artifacts encased in protective glass \u2013 reminders of past conflicts and the weight of the kingdom's history. The air hums with the quiet whir of advanced technology. The obsidian table reflects the holographic projections, creating an illusion of depth and complexity."
+        },
+        "characters": [
+            {
+                "id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                "name": "Elara",
+                "description": "Elara is a young woman in her early twenties, with a slender build and a determined gaze. She has long, wavy brown hair that she often keeps tied back, and striking green eyes that reflect her adventurous spirit. She typically wears practical, modern clothing suitable for exploring, but with a touch of personal style, like a colorful scarf or unique boots.",
+                "personality_traits": [
+                    "Resourceful",
+                    "Curious",
+                    "Brave",
+                    "Independent"
+                ]
+            },
+            {
+                "id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                "name": "King Theron",
+                "description": "King Theron is a regal figure in his late thirties. He has a strong, commanding presence, with broad shoulders and a confident posture. He has short, dark hair streaked with silver, and piercing blue eyes that convey both wisdom and authority. He is always seen wearing ornate royal attire, adorned with precious gems and intricate embroidery, reflecting his status as the ruler of the land.",
+                "personality_traits": [
+                    "Wise",
+                    "Just",
+                    "Protective",
+                    "Reserved"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "2d5ba7e1-1a75-4904-8a16-9af79350a9ee",
+                "description": "King Theron's voice booms, cutting through the tense silence. \"Explain to them, Elara. Show them what you discovered.\" He gestures sharply towards the holographic map, where a pulsating red zone highlights a previously uncharted region bordering the Shadowlands. Elara steps forward, her green eyes gleaming with determination. She taps a series of commands on a nearby console, and the holographic map zooms in, revealing intricate details of the terrain. Mountains twist into jagged peaks, and deep ravines scar the landscape. \"This area,\" she says, her voice clear and confident, \"was thought to be impassable. But my research indicates a network of ancient tunnels, hidden beneath the surface. These tunnels,\" she continues, her finger tracing a path across the holographic display, \"could provide a secret passage into the heart of the Shadowlands, bypassing the heavily fortified borders.\" A murmur ripples through the advisors. One, a portly man with a neatly trimmed beard, scoffs. \"Preposterous! Such tunnels would have been discovered centuries ago.\" Elara turns to him, her gaze unwavering. \"They were deliberately concealed,\" she counters, \"protected by ancient wards and illusions. I've deciphered the key to unlocking them.\" King Theron watches Elara, a flicker of hope in his blue eyes. He sees not just a young woman, but a potential savior. He thinks, 'Can she truly succeed where so many have failed? Is this our last, best hope?'",
+                "timestamp": 0.0,
+                "camera_angle": "A medium shot focusing on Elara as she explains her findings, with King Theron visible in the background, observing her with a mixture of hope and apprehension. The royal advisors are framed around the edges, their expressions reflecting their skepticism and doubt.",
+                "scene_id": "ca2045ea-b350-461f-9953-7bf58a967621",
+                "image_path": "images/event_2d5ba7e1-1a75-4904-8a16-9af79350a9ee.png",
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_2d5ba7e1-1a75-4904-8a16-9af79350a9ee_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_2d5ba7e1-1a75-4904-8a16-9af79350a9ee_frame.png",
+                "dialogues": [
+                    {
+                        "id": "0f178d2a-0593-4864-86b5-d1afa72b11ee",
+                        "text": "\"This area was thought to be impassable. But my research indicates a network of ancient tunnels, hidden beneath the surface.\"",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "confident",
+                        "event_id": "2d5ba7e1-1a75-4904-8a16-9af79350a9ee",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    },
+                    {
+                        "id": "52feebb7-ae56-4687-9a4e-ed4da8a8b2f1",
+                        "text": "\"Explain to them, Elara. Show them what you discovered.\"",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "commanding",
+                        "event_id": "2d5ba7e1-1a75-4904-8a16-9af79350a9ee",
+                        "type": "spoken",
+                        "action": "He gestures sharply towards the holographic map.",
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "f779ff95-94c2-4919-a266-8d9087ee2d33",
+                        "text": "\"They were deliberately concealed, protected by ancient wards and illusions. I've deciphered the key to unlocking them.\"",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "determined",
+                        "event_id": "2d5ba7e1-1a75-4904-8a16-9af79350a9ee",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    }
+                ]
+            },
+            {
+                "id": "5705b840-c0bb-4654-bee9-39dc8f8083cb",
+                "description": "The portly advisor, Lord Valerius, steps forward, his face flushed with indignation. \"Wards and illusions? Deciphered by *you*? A commoner with no formal training? This is an insult to the Royal Academy!\" He throws his hands up in exasperation, his jeweled rings glinting under the holographic light. Elara stands her ground, her expression unwavering despite the blatant disrespect. \"My methods may be unconventional, Lord Valerius, but the results speak for themselves. I've cross-referenced ancient texts, geological surveys, and local legends. The evidence is irrefutable.\" She taps the console again, and a series of complex symbols appear on the holographic map, swirling around the entrance to one of the tunnels. \"These are the activation runes,\" she explains. \"A sequence of sonic vibrations, precisely calibrated, will disrupt the wards and reveal the tunnel entrance.\" King Theron raises a hand, silencing the brewing argument. His gaze sweeps across the room, settling on Elara. \"And what of the risks, Elara? What dangers lie within these tunnels?\" He feels a surge of protectiveness towards her, a strange mix of hope and fear. Elara hesitates for a fraction of a second, a shadow crossing her face. \"I don't know for sure,\" she admits, her voice softening slightly. \"The texts speak of guardians, ancient automatons powered by arcane energies. But they also speak of\u2026artifacts. Artifacts of immense power, lost for centuries.\" She looks directly at King Theron, her green eyes burning with conviction. \"The risk is great, Your Majesty, but the potential reward is even greater. If we can secure these artifacts, we can turn the tide of the war.\"",
+                "timestamp": 58.800000000000004,
+                "camera_angle": "A medium shot focusing on Elara as she speaks, capturing the determination in her eyes and the subtle shift in her expression as she acknowledges the risks. The camera slightly blurs the advisors in the background, emphasizing Elara's central role in the scene.",
+                "scene_id": "ca2045ea-b350-461f-9953-7bf58a967621",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_5705b840-c0bb-4654-bee9-39dc8f8083cb_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_5705b840-c0bb-4654-bee9-39dc8f8083cb_frame.png",
+                "dialogues": []
+            },
+            {
+                "id": "291d568c-f9e3-4660-9731-f4789cef35a2",
+                "description": "King Theron studies Elara, his blue eyes piercing. He sees not just a commoner, but a spark of ingenuity and courage that the Royal Academy sorely lacks. He trusts his instincts, a quality that has served him well in the past. \"Lord Valerius,\" he says, his voice resonating with authority, \"enough. Elara has proven her worth. We will proceed with her plan.\" He turns back to Elara, a hint of a smile playing on his lips. \"Prepare your\u2026sonic vibrations. I want a team ready to enter the tunnels within the hour.\" Elara nods, a surge of adrenaline coursing through her veins. This is it. The moment of truth. She glances at the swirling runes on the holographic map, a mix of excitement and trepidation swirling within her. She can almost feel the ancient energies humming beneath the palace, waiting to be awakened. Lord Valerius sputters in protest, but King Theron silences him with a sharp glare. \"Lord Valerius, ensure Elara has everything she needs. See to it personally.\" The king turns his attention back to the holographic display, his brow furrowed in concentration. He knows this mission is a gamble, but he's willing to risk it all for the sake of his kingdom. He thinks to himself, 'I pray I'm not leading her to her doom.'",
+                "timestamp": 124.0,
+                "camera_angle": "A medium shot, focusing on the exchange between King Theron and Elara, with Lord Valerius visible in the background, fuming silently.",
+                "scene_id": "ca2045ea-b350-461f-9953-7bf58a967621",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_291d568c-f9e3-4660-9731-f4789cef35a2_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_291d568c-f9e3-4660-9731-f4789cef35a2_frame.png",
+                "dialogues": [
+                    {
+                        "id": "513821e4-597c-47bc-8754-0c713b16f674",
+                        "text": "Lord Valerius, enough. Elara has proven her worth. We will proceed with her plan.",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "authoritative",
+                        "event_id": "291d568c-f9e3-4660-9731-f4789cef35a2",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "dd4a2518-f7e4-4419-b715-7edb9b4c090b",
+                        "text": "Lord Valerius, ensure Elara has everything she needs. See to it personally.",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "firm",
+                        "event_id": "291d568c-f9e3-4660-9731-f4789cef35a2",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "e3a2d5db-7d4d-475b-9739-3887c9aff5a9",
+                        "text": "Prepare your\u2026sonic vibrations. I want a team ready to enter the tunnels within the hour.",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "commanding",
+                        "event_id": "291d568c-f9e3-4660-9731-f4789cef35a2",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "scene": {
+            "id": "d5df7ae1-0a0a-4380-87e6-47db2a1ce649",
+            "scene_number": 2,
+            "location": "Entrance to the Shadowland Tunnels",
+            "description": "The scene opens on a hidden entrance to the Shadowland Tunnels, concealed behind a waterfall cascading down a moss-covered cliff face. The waterfall partially obscures the entrance, creating a shimmering, ethereal curtain of water. The area immediately surrounding the entrance is a small, rocky clearing, damp and overgrown with ferns and other shade-loving plants. A makeshift camp has been set up, with several members of the King's guard, clad in modern tactical gear but bearing the royal crest, making final preparations. Crates containing supplies and equipment are scattered around. Elara stands before the entrance, examining a section of the cliff face with a focused expression. Lord Valerius watches her with thinly veiled disapproval from a short distance away, arms crossed. King Theron stands slightly apart, his face etched with concern and a hint of hope. Torches and battery-powered lanterns illuminate the scene, casting long, dancing shadows.",
+            "image_path": null,
+            "time_of_day": "Late Afternoon",
+            "lighting": "The natural light is dim and diffused, filtered through the dense foliage. The artificial light from the torches and lanterns provides warm pools of illumination, creating a stark contrast between light and shadow.",
+            "camera_setup": "The camera opens with a wide shot establishing the location and the scale of the waterfall and cliff face. It then slowly zooms in on Elara as she examines the entrance. Close-up shots will focus on Elara's determined face, Valerius's skeptical expression, and King Theron's worried countenance. A tracking shot will follow Elara as she moves towards the tunnel entrance.",
+            "mood": "Tense, expectant, and slightly foreboding. There's a sense of anticipation mixed with apprehension as the team prepares to enter the unknown. The atmosphere is heavy with the weight of the kingdom's fate.",
+            "setting_details": "The air is thick with the scent of damp earth and decaying leaves. The sound of rushing water from the waterfall is constant and pervasive. The activation runes Elara discovered are faintly glowing on the rock face near the entrance, providing a subtle visual cue to their magical nature. The overall impression is one of a hidden and forgotten place, now about to be disturbed."
+        },
+        "characters": [
+            {
+                "id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                "name": "Elara",
+                "description": "Elara is a young woman in her early twenties, with a slender build and a determined gaze. She has long, wavy brown hair that she often keeps tied back, and striking green eyes that reflect her adventurous spirit. She typically wears practical, modern clothing suitable for exploring, but with a touch of personal style, like a colorful scarf or unique boots.",
+                "personality_traits": [
+                    "Resourceful",
+                    "Curious",
+                    "Brave",
+                    "Independent"
+                ]
+            },
+            {
+                "id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                "name": "King Theron",
+                "description": "King Theron is a regal figure in his late thirties. He has a strong, commanding presence, with broad shoulders and a confident posture. He has short, dark hair streaked with silver, and piercing blue eyes that convey both wisdom and authority. He is always seen wearing ornate royal attire, adorned with precious gems and intricate embroidery, reflecting his status as the ruler of the land.",
+                "personality_traits": [
+                    "Wise",
+                    "Just",
+                    "Protective",
+                    "Reserved"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "541cb310-c7e4-45fd-968e-340c3450419f",
+                "description": "Elara, her brow furrowed in concentration, runs a gloved hand over a section of the rock face near the waterfall's edge. She presses firmly on a seemingly unremarkable stone, and a low grinding sound echoes from within the cliff. A section of the rock face, cleverly disguised, pivots inward, revealing a narrow, dark passage. Dust and the scent of damp earth waft out. Lord Valerius visibly recoils, his nose wrinkling in distaste. King Theron steps forward, his eyes widening with a mixture of anticipation and trepidation. He clutches a small, intricately carved wooden amulet hidden beneath his royal robes, seeking comfort in its familiar weight. Elara turns to the King, a flicker of excitement in her green eyes. \"It's open, Your Majesty. The way to Shadowland.\"",
+                "timestamp": 0.0,
+                "camera_angle": "Medium shot, focusing on Elara as she triggers the mechanism, then panning to King Theron's reaction and the revealed entrance.",
+                "scene_id": "d5df7ae1-0a0a-4380-87e6-47db2a1ce649",
+                "image_path": "images/event_541cb310-c7e4-45fd-968e-340c3450419f.png",
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_541cb310-c7e4-45fd-968e-340c3450419f_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_541cb310-c7e4-45fd-968e-340c3450419f_frame.png",
+                "dialogues": [
+                    {
+                        "id": "431ad55d-3a53-467d-957c-70e08a1c99e0",
+                        "text": "Shadowland... legends say it's a perilous place.",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "apprehensive",
+                        "event_id": "541cb310-c7e4-45fd-968e-340c3450419f",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "74296667-efee-4b6c-b348-479620bd0c46",
+                        "text": "But it's the only way to retrieve the Sunstone, isn't it?",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "determined",
+                        "event_id": "541cb310-c7e4-45fd-968e-340c3450419f",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    },
+                    {
+                        "id": "f855e5ee-b128-4bd0-93bc-417aae504612",
+                        "text": "It's open, Your Majesty. The way to Shadowland.",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "excited",
+                        "event_id": "541cb310-c7e4-45fd-968e-340c3450419f",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    }
+                ]
+            },
+            {
+                "id": "30166cf0-2de1-48c5-9c2d-06daa21cdab0",
+                "description": "Elara, emboldened by her success, gestures towards the newly revealed passage. \"After you, Your Majesty.\" She readies her gear, checking the straps of her backpack and adjusting the headlamp strapped to her forehead. Lord Valerius, despite his obvious reservations, steps forward, his hand resting on the hilt of his sword. He eyes the darkness warily, his face a mask of apprehension. King Theron hesitates for a moment, his gaze flickering between the dark opening and Elara's encouraging smile. He takes a deep breath, steeling himself, and steps towards the entrance. The amulet beneath his robes feels warm against his skin, a tangible link to his ancestors and a source of courage. As he passes Elara, he offers a small, grateful nod. \"Lead the way, Elara. May the light guide us.\"",
+                "timestamp": 30.400000000000002,
+                "camera_angle": "A low-angle shot, positioned just inside the tunnel entrance, looking out at the assembled group. The King is framed in the center, with Elara to his right and Lord Valerius slightly behind him to the left. The waterfall and the remaining guards are visible in the background, creating a sense of depth and emphasizing the contrast between the familiar world and the unknown darkness of the Shadowland Tunnels.",
+                "scene_id": "d5df7ae1-0a0a-4380-87e6-47db2a1ce649",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_30166cf0-2de1-48c5-9c2d-06daa21cdab0_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_30166cf0-2de1-48c5-9c2d-06daa21cdab0_frame.png",
+                "dialogues": [
+                    {
+                        "id": "210532b2-2a89-4938-aaed-b9dac4816085",
+                        "text": "Lead the way, Elara. May the light guide us.",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "grateful",
+                        "event_id": "30166cf0-2de1-48c5-9c2d-06daa21cdab0",
+                        "type": "spoken",
+                        "action": "offers a small, grateful nod as he passes Elara",
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "76862cb5-c3f6-407e-b407-bef82765631a",
+                        "text": "After you, Your Majesty.",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "encouraging",
+                        "event_id": "30166cf0-2de1-48c5-9c2d-06daa21cdab0",
+                        "type": "spoken",
+                        "action": "gestures towards the newly revealed passage and readies her gear",
+                        "speaker_name": "Elara"
+                    }
+                ]
+            },
+            {
+                "id": "107462f2-65bd-4cbb-b588-d8f73ca07f4c",
+                "description": "Elara, now taking the lead, plunges into the Shadowland Tunnels. The beam of her headlamp cuts through the oppressive darkness, revealing glistening, damp walls covered in strange, bioluminescent fungi. The air hangs heavy with the smell of damp earth and something ancient, almost metallic. Behind her, King Theron follows, his royal attire a stark contrast to the rugged surroundings. He feels a shiver crawl down his spine, not entirely from the cold. The amulet pulses faintly against his chest, a comforting presence in the encroaching gloom. Lord Valerius brings up the rear, his sword now drawn, the polished steel reflecting the faint light. He scans the shadows, his senses on high alert, every rustle and drip amplified in the echoing tunnels. A sense of unease settles over him; he trusts Elara's skills, but the air itself feels malevolent, as if the very stones are watching, waiting. Deeper into the tunnel they venture, the waterfall's roar fading behind them, replaced by an unnerving silence punctuated only by the drip, drip, drip of water and the sound of their own breathing. Elara stops abruptly, holding up a hand. \"Wait,\" she whispers, her voice barely audible above the ringing in their ears. \"I hear something.\"",
+                "timestamp": 59.0,
+                "camera_angle": "A low-angle shot from behind Elara, looking deeper into the tunnel. The camera focuses on the interplay of light and shadow on the tunnel walls, with King Theron and Lord Valerius partially visible behind her, their faces etched with a mixture of apprehension and determination.",
+                "scene_id": "d5df7ae1-0a0a-4380-87e6-47db2a1ce649",
+                "image_path": null,
+                "sound_cues": "[\"whispering\"]",
+                "video_paths": [
+                    "videos/event_107462f2-65bd-4cbb-b588-d8f73ca07f4c_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_107462f2-65bd-4cbb-b588-d8f73ca07f4c_frame.png",
+                "dialogues": [
+                    {
+                        "id": "378699d0-b5a9-4f6d-a213-4579ba5d54cd",
+                        "text": "Sounds like... chanting.",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "uneasy",
+                        "event_id": "107462f2-65bd-4cbb-b588-d8f73ca07f4c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    },
+                    {
+                        "id": "3f29ec4c-ef4e-4a81-8d22-d66a0371a84d",
+                        "text": "I hear something.",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "alert",
+                        "event_id": "107462f2-65bd-4cbb-b588-d8f73ca07f4c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Elara"
+                    },
+                    {
+                        "id": "57d6cd10-6e75-4e69-b232-faab42f575b6",
+                        "text": "Chanting? In these tunnels?",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "worried",
+                        "event_id": "107462f2-65bd-4cbb-b588-d8f73ca07f4c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "8a26c62d-c8d3-4a7b-b6d8-d74e04d23fcc",
+                        "text": "What is it?",
+                        "speaker_id": "21d0b242-7e6c-4eee-b48c-b2b3de00ff26",
+                        "emotion": "curious",
+                        "event_id": "107462f2-65bd-4cbb-b588-d8f73ca07f4c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "King Theron"
+                    },
+                    {
+                        "id": "d0284ec9-e470-498a-8caa-7de193790643",
+                        "text": "Wait.",
+                        "speaker_id": "70bdda1d-e987-48f8-8626-43dcce45d936",
+                        "emotion": "concerned",
+                        "event_id": "107462f2-65bd-4cbb-b588-d8f73ca07f4c",
+                        "type": "spoken",
+                        "action": "Elara stops abruptly, holding up a hand.",
+                        "speaker_name": "Elara"
+                    }
+                ]
+            }
+        ]
+    }
+]
