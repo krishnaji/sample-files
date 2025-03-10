@@ -1,0 +1,881 @@
+[
+    {
+        "scene": {
+            "id": "269e3fd1-c776-47c4-a0ef-f8be5e543348",
+            "scene_number": 0,
+            "location": "Open-plan office space - Software Development Team Area",
+            "description": "The camera focuses on ANNA (30s, energetic software developer) at her workstation. Empty coffee cups and scattered notes surround her dual monitors. She's staring intently at the screen, fingers flying across the keyboard. Other developers are visible in the background, some collaborating at whiteboards, others heads down in concentration. The overall atmosphere is busy but focused. Anna is debugging code, clearly frustrated but determined. She runs the code, and an error message pops up. She sighs dramatically.",
+            "image_path": null,
+            "time_of_day": "Late Afternoon (4:30 PM)",
+            "lighting": "Fluorescent office lighting, slightly warmer tones filtering in from the large windows as the sun begins to set.",
+            "camera_setup": "Medium shot of Anna at her desk, slightly angled to show her computer screens. Occasional quick cuts to close-ups of her hands on the keyboard and the error message on the screen. Background is slightly blurred to maintain focus on Anna.",
+            "mood": "Frustrated, determined, slightly comedic (due to Anna's exaggerated reactions). The overall mood is busy and productive, but with a hint of end-of-day weariness.",
+            "setting_details": "Post-it notes with code snippets and reminders are stuck to the edges of Anna's monitors. A half-eaten sandwich sits beside her keyboard. A motivational poster with a coding pun hangs on the wall behind her. The general area is cluttered but organized, reflecting the organized chaos of software development."
+        },
+        "characters": [
+            {
+                "id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                "name": "Alice Codebreaker",
+                "description": "Alice is a young, energetic software developer with bright pink hair usually tied up in a messy bun. She wears oversized glasses and has a perpetually tired but determined look. Her clothing style is casual and comfortable, often consisting of hoodies and jeans.",
+                "personality_traits": [
+                    "Enthusiastic",
+                    "Problem-solver",
+                    "Team player"
+                ]
+            },
+            {
+                "id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                "name": "Bob Debugger",
+                "description": "Bob is a seasoned software developer, slightly overweight with a receding hairline. He often sports a neatly trimmed beard and wears button-down shirts, even in a casual office environment. He has a calm and collected demeanor.",
+                "personality_traits": [
+                    "Patient",
+                    "Analytical",
+                    "Mentor"
+                ]
+            },
+            {
+                "id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                "name": "Charlie Compiler",
+                "description": "Charlie is a quirky and eccentric developer with a lanky build and wild, unkempt hair. He has a habit of wearing mismatched socks and coding-themed t-shirts. He is often seen muttering to himself while working.",
+                "personality_traits": [
+                    "Creative",
+                    "Independent",
+                    "Perfectionist"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "f61c9064-cf91-4c93-b01c-c4b972f39c8c",
+                "description": "Bob, noticing Anna's frustration, ambles over to her workstation. He leans in, his expression a mixture of concern and professional curiosity. \"Rough morning, Anna?\" he asks, his voice calm and reassuring. Anna groans, swiveling in her chair to face him. \"You have no idea, Bob. This function is driving me insane! I've been at it for hours, and it keeps throwing this null pointer exception.\" She gestures wildly at the error message blazing on her screen, her pink hair slightly askew. Bob peers at the code, his brow furrowing slightly as he takes in the tangled web of logic. He pulls up a chair, settling in beside her. \"Alright, let's take a look. Show me what you've tried so far.\"",
+                "timestamp": 0.0,
+                "camera_angle": "Medium shot, focusing on Anna and Bob as they interact. The camera slightly favors Anna, capturing her exasperation, but also includes Bob's calm demeanor and focused gaze.",
+                "scene_id": "269e3fd1-c776-47c4-a0ef-f8be5e543348",
+                "image_path": "images/event_f61c9064-cf91-4c93-b01c-c4b972f39c8c.png",
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_f61c9064-cf91-4c93-b01c-c4b972f39c8c_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_f61c9064-cf91-4c93-b01c-c4b972f39c8c_frame.png",
+                "dialogues": [
+                    {
+                        "id": "1977ba3b-959c-4491-b1dd-66e781acc1d2",
+                        "text": "Alright, let's take a look.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "calm",
+                        "event_id": "f61c9064-cf91-4c93-b01c-c4b972f39c8c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "73bee4c8-9745-4f53-a9df-099bd57bf6bc",
+                        "text": "You have no idea, Bob. This function is driving me insane!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "frustrated",
+                        "event_id": "f61c9064-cf91-4c93-b01c-c4b972f39c8c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "9219f8ce-8f5d-4b90-b989-61d5abcf1bf1",
+                        "text": "Show me what you've tried so far.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "inquisitive",
+                        "event_id": "f61c9064-cf91-4c93-b01c-c4b972f39c8c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "bba3c93b-8f3f-4fe9-8817-e93bb13fb6d8",
+                        "text": "Rough morning, Anna?",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "concerned",
+                        "event_id": "f61c9064-cf91-4c93-b01c-c4b972f39c8c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "e7171365-1028-4534-ae9c-5a33a9974f9f",
+                        "text": "Okay, so I thought...",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "hopeful",
+                        "event_id": "f61c9064-cf91-4c93-b01c-c4b972f39c8c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    }
+                ]
+            },
+            {
+                "id": "e4a2c54f-60a1-4277-8fdb-3365c362b203",
+                "description": "Bob, now seated beside Anna, points a finger at a specific line of code. \"See this loop here? It looks like you're not handling the case where 'data' might be null before you try to access its properties.\" Anna squints, her eyes following Bob's finger as he traces the problematic section. A flicker of understanding crosses her face, quickly followed by renewed frustration. \"But I thought I had a check for that!\" she exclaims, slamming her hand lightly on the desk. Charlie, drawn by the commotion, shuffles over, his mismatched socks peeking out from under his desk. He peers over Bob's shoulder, muttering to himself. \"Null pointer...nasty beast. Always lurking...\" He scratches his head, pulling a few strands of his already wild hair. Bob ignores Charlie's ramblings, focusing on Anna. \"Let's step through it with the debugger,\" he suggests, his voice calm and steady. \"I bet we'll find the exact moment it goes south.\"",
+                "timestamp": 30.0,
+                "camera_angle": "Close-up on the computer screen, showing the code and error message, with Bob's and Anna's hands pointing at different sections. Charlie is slightly out of focus in the background, peering in.",
+                "scene_id": "269e3fd1-c776-47c4-a0ef-f8be5e543348",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_e4a2c54f-60a1-4277-8fdb-3365c362b203_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_e4a2c54f-60a1-4277-8fdb-3365c362b203_frame.png",
+                "dialogues": [
+                    {
+                        "id": "06db4e72-aa0e-4cb5-b61c-e26cc5d65480",
+                        "text": "Let's step through it with the debugger. I bet we'll find the exact moment it goes south.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": null,
+                        "event_id": "e4a2c54f-60a1-4277-8fdb-3365c362b203",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "a3a71ff3-b328-4210-9c7a-9e9f5c2f6957",
+                        "text": "See this loop here? It looks like you're not handling the case where 'data' might be null before you try to access its properties.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": null,
+                        "event_id": "e4a2c54f-60a1-4277-8fdb-3365c362b203",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "bdf78cb4-9884-4cbc-8d7d-316390f18d13",
+                        "text": "But I thought I had a check for that!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "frustration",
+                        "event_id": "e4a2c54f-60a1-4277-8fdb-3365c362b203",
+                        "type": "spoken",
+                        "action": "slamming her hand lightly on the desk",
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "f3ec299a-21a8-46de-91ff-06ecd58ccf7e",
+                        "text": "Null pointer...nasty beast. Always lurking...",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": null,
+                        "event_id": "e4a2c54f-60a1-4277-8fdb-3365c362b203",
+                        "type": "spoken",
+                        "action": "scratching his head",
+                        "speaker_name": "Charlie Compiler"
+                    }
+                ]
+            },
+            {
+                "id": "38485bc2-6818-4961-a980-dd6419c0d9c8",
+                "description": "The camera tightens on Anna's monitor as Bob expertly navigates the debugger. Lines of code flash by, variables flicker with values. Anna leans in, her brow furrowed in concentration, chewing nervously on the end of her pen. Bob clicks through each step, his voice a low, steady hum as he explains the flow of execution. Charlie continues to hover, occasionally interjecting with cryptic pronouncements like, \"Ah, the ghost in the machine!\" or \"Beware the off-by-one error!\" Finally, the debugger pauses on a line. The 'data' variable is highlighted, its value clearly 'null'. Anna stares at the screen, a dawning realization spreading across her face. \"Oh,\" she whispers, the sound barely audible above the hum of the office. \"I see it now. I was checking the wrong condition!\" A wave of relief washes over her, mixed with a healthy dose of self-reproach. Bob smiles gently. \"Happens to the best of us,\" he says, patting her on the shoulder. \"Now, let's fix it.\"",
+                "timestamp": 74.4,
+                "camera_angle": "Close-up on Anna's monitor, then pans slightly to show Anna, Bob, and Charlie huddled around it.",
+                "scene_id": "269e3fd1-c776-47c4-a0ef-f8be5e543348",
+                "image_path": null,
+                "sound_cues": "[\"whispering\"]",
+                "video_paths": [
+                    "videos/event_38485bc2-6818-4961-a980-dd6419c0d9c8_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_38485bc2-6818-4961-a980-dd6419c0d9c8_frame.png",
+                "dialogues": [
+                    {
+                        "id": "0b9d8368-795d-497c-b1b4-3fc07efc4670",
+                        "text": "Oh, I see it now. I was checking the wrong condition!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "relieved",
+                        "event_id": "38485bc2-6818-4961-a980-dd6419c0d9c8",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "15e6acf0-715a-4a9a-be6a-732a0cb60bb6",
+                        "text": "Now, let's fix it.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "encouraging",
+                        "event_id": "38485bc2-6818-4961-a980-dd6419c0d9c8",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "84e72e85-9a02-4c82-a83a-9b031bab43c3",
+                        "text": "Happens to the best of us.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "calm",
+                        "event_id": "38485bc2-6818-4961-a980-dd6419c0d9c8",
+                        "type": "spoken",
+                        "action": "pats her on the shoulder",
+                        "speaker_name": "Bob Debugger"
+                    }
+                ]
+            },
+            {
+                "id": "813e5741-733c-422c-ad78-d0f0b6e893a4",
+                "description": "With renewed vigor, Anna attacks the keyboard. Her fingers dance across the keys as she modifies the offending line of code, a confident smile playing on her lips. The error, once a seemingly insurmountable obstacle, now feels trivial. Bob watches with a knowing nod, the corners of his eyes crinkling in amusement. Charlie, still hovering, mutters something about \"the elegance of a well-placed semicolon.\" Anna runs the code again, her eyes glued to the console. The program compiles without errors. A triumphant grin spreads across her face as she launches the application. The expected output appears, pristine and correct. She pumps her fist in the air, a silent victory cry. \"Yes!\" she mouths, careful not to disturb her focused colleagues. A sense of accomplishment washes over her, erasing the earlier frustration. She leans back in her chair, finally allowing herself to savor the moment. Bob gives her a thumbs-up. \"Good job, Anna,\" he says. \"Persistence pays off.\" Charlie, meanwhile, has already drifted away, muttering about the intricacies of garbage collection.",
+                "timestamp": 110.80000000000001,
+                "camera_angle": "Medium shot, focusing on Anna's face as she types, then widening to include Bob and Charlie's reactions.",
+                "scene_id": "269e3fd1-c776-47c4-a0ef-f8be5e543348",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_813e5741-733c-422c-ad78-d0f0b6e893a4_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_813e5741-733c-422c-ad78-d0f0b6e893a4_frame.png",
+                "dialogues": [
+                    {
+                        "id": "41dc21a1-ffdc-4b24-a0d4-d8f0dfafa585",
+                        "text": "Good job, Anna.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "approving",
+                        "event_id": "813e5741-733c-422c-ad78-d0f0b6e893a4",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "5d0be5c3-0864-4773-82a1-fcdf0199f612",
+                        "text": "Persistence pays off.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "calm",
+                        "event_id": "813e5741-733c-422c-ad78-d0f0b6e893a4",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    }
+                ]
+            },
+            {
+                "id": "c6201cb1-c9e9-442d-808c-afee1eb83d39",
+                "description": "Just as Anna relaxes, a new challenge emerges. Her phone buzzes on her desk. She glances at the screen and groans inwardly; it's a message from the project manager. 'Urgent meeting in the conference room in 5 minutes. Critical bug needs immediate attention.' Anna's shoulders slump. The fleeting moment of triumph vanishes, replaced by a sense of resignation. Bob, noticing her change in demeanor, raises an eyebrow in question. Anna sighs and shows him the message. Bob nods sympathetically. 'Looks like your break will have to wait,' he says with a wry smile. Anna pushes back from her desk, gathers her notebook and pen, and heads towards the conference room, a mix of annoyance and determination on her face. She thinks to herself, 'So much for celebrating a small win; another fire to put out.'",
+                "timestamp": 148.8,
+                "camera_angle": "Medium shot, following Anna as she walks towards the conference room, capturing her frustrated expression and Bob's sympathetic glance.",
+                "scene_id": "269e3fd1-c776-47c4-a0ef-f8be5e543348",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_c6201cb1-c9e9-442d-808c-afee1eb83d39_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_c6201cb1-c9e9-442d-808c-afee1eb83d39_frame.png",
+                "dialogues": [
+                    {
+                        "id": "08503417-c1db-40a6-914f-eabf3d37093b",
+                        "text": "So much for celebrating a small win; another fire to put out.",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "annoyed",
+                        "event_id": "c6201cb1-c9e9-442d-808c-afee1eb83d39",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "50b3e995-bf0d-4acd-851d-6eaaa74f6a8c",
+                        "text": "Looks like your break will have to wait.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "sympathetic",
+                        "event_id": "c6201cb1-c9e9-442d-808c-afee1eb83d39",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "scene": {
+            "id": "11f10cda-1470-4572-9dfe-69711f8b0134",
+            "scene_number": 1,
+            "location": "Conference Room - 'The Algorithm'",
+            "description": "A brightly lit conference room. A long, polished table dominates the center, surrounded by ergonomic chairs. Anna, Bob, Charlie, and several other developers are seated around the table. A large interactive whiteboard displays a complex flowchart with highlighted sections and error messages. Empty coffee cups and crumpled paper litter the table, evidence of a long and stressful meeting. Anna looks tired but determined, Bob appears concerned, and Charlie is doodling on his notepad. The atmosphere is tense but collaborative.",
+            "image_path": null,
+            "time_of_day": "Late Morning",
+            "lighting": "Bright, artificial fluorescent lighting, supplemented by natural light filtering through a large window overlooking the city.",
+            "camera_setup": "A wide shot establishes the scene, then cuts to close-ups of Anna, Bob, and Charlie to capture their expressions. The camera occasionally pans across the whiteboard to show the bug's complexity. A slightly higher angle shot emphasizes the length of the table and the number of participants, highlighting the importance of the meeting.",
+            "mood": "Anxious, focused, and slightly frustrated. There's a sense of urgency to resolve the critical bug, but also a feeling of camaraderie and shared responsibility.",
+            "setting_details": "The conference room is named 'The Algorithm,' indicated by a sleek metal sign on the door. The whiteboard has remnants of previous brainstorming sessions visible underneath the current flowchart. A motivational poster with a coding pun hangs slightly askew on the wall, adding a touch of levity to the serious atmosphere. The city skyline visible through the window provides a contrasting backdrop of calm and progress."
+        },
+        "characters": [
+            {
+                "id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                "name": "Alice Codebreaker",
+                "description": "Alice is a young, energetic software developer with bright pink hair usually tied up in a messy bun. She wears oversized glasses and has a perpetually tired but determined look. Her clothing style is casual and comfortable, often consisting of hoodies and jeans.",
+                "personality_traits": [
+                    "Enthusiastic",
+                    "Problem-solver",
+                    "Team player"
+                ]
+            },
+            {
+                "id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                "name": "Bob Debugger",
+                "description": "Bob is a seasoned software developer, slightly overweight with a receding hairline. He often sports a neatly trimmed beard and wears button-down shirts, even in a casual office environment. He has a calm and collected demeanor.",
+                "personality_traits": [
+                    "Patient",
+                    "Analytical",
+                    "Mentor"
+                ]
+            },
+            {
+                "id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                "name": "Charlie Compiler",
+                "description": "Charlie is a quirky and eccentric developer with a lanky build and wild, unkempt hair. He has a habit of wearing mismatched socks and coding-themed t-shirts. He is often seen muttering to himself while working.",
+                "personality_traits": [
+                    "Creative",
+                    "Independent",
+                    "Perfectionist"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "70cc0e61-1348-4f98-a095-75e28954949e",
+                "description": "Bob sighs, the sound heavy with the weight of the unresolved bug. He pushes his glasses up his nose, his gaze sweeping across the flowchart projected on the whiteboard. \"Alright team,\" he begins, his voice a low rumble that cuts through the tense silence. \"Let's try a different approach. Alice, you were looking at the memory allocation, right? Any hunches?\" Alice, jolted from her weary stupor, straightens up. Her fingers twitch, eager to get back to the code. \"I think there might be a memory leak in the 'renderTexture' function,\" she says, her voice gaining confidence as she speaks. \"It's not releasing the allocated memory after each frame, which could explain the slowdown we're seeing after prolonged use.\" Charlie, still doodling, suddenly stops. His head snaps up, eyes wide. He slams his notepad on the table, making everyone jump. \"Wait a minute!\" he exclaims, his voice cracking with excitement. \"I think Alice is onto something! I noticed some weird garbage collection behavior earlier, but I dismissed it as cosmic rays or something!\" He grabs a marker and rushes to the whiteboard, circling a section of the flowchart with frantic energy. \"If we can optimize the memory management in that function, we might just squash this bug!\"",
+                "timestamp": 0.0,
+                "camera_angle": "Medium shot, focusing on Bob as he speaks, then panning to Alice as she responds, and finally zooming in on Charlie as he excitedly approaches the whiteboard.",
+                "scene_id": "11f10cda-1470-4572-9dfe-69711f8b0134",
+                "image_path": "images/event_70cc0e61-1348-4f98-a095-75e28954949e.png",
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_70cc0e61-1348-4f98-a095-75e28954949e_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_70cc0e61-1348-4f98-a095-75e28954949e_frame.png",
+                "dialogues": [
+                    {
+                        "id": "0d371c0c-3e42-4143-a4d3-775163c144cb",
+                        "text": "If we can optimize the memory management in that function, we might just squash this bug!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "excited",
+                        "event_id": "70cc0e61-1348-4f98-a095-75e28954949e",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    },
+                    {
+                        "id": "590c6163-736a-4eac-96a8-6be0f339f1dd",
+                        "text": "I think there might be a memory leak in the 'renderTexture' function. It's not releasing the allocated memory after each frame, which could explain the slowdown we're seeing after prolonged use.",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "confident",
+                        "event_id": "70cc0e61-1348-4f98-a095-75e28954949e",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "710be86c-d6b7-41fc-9e9c-3b77a7d5cf22",
+                        "text": "I think Alice is onto something! I noticed some weird garbage collection behavior earlier, but I dismissed it as cosmic rays or something!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "excited",
+                        "event_id": "70cc0e61-1348-4f98-a095-75e28954949e",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    },
+                    {
+                        "id": "9cdfb52f-aa65-440b-80e8-75fadf663d18",
+                        "text": "Alright team, let's try a different approach. Alice, you were looking at the memory allocation, right? Any hunches?",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "calm",
+                        "event_id": "70cc0e61-1348-4f98-a095-75e28954949e",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "e8691286-0c41-4a44-ad0c-653a9ee8697d",
+                        "text": "Wait a minute!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "excited",
+                        "event_id": "70cc0e61-1348-4f98-a095-75e28954949e",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    }
+                ]
+            },
+            {
+                "id": "8b3946f3-3aa0-41db-96f5-be7a4c06280c",
+                "description": "Bob's eyebrows shoot up in surprise at Charlie's outburst, a flicker of hope igniting in his weary eyes. \"Cosmic rays, Charlie?\" he asks, a hint of amusement coloring his tone. Despite the absurdity, he knows Charlie's eccentricities often lead to brilliant insights. Alice, now fully energized, leans forward, her pink hair partially obscuring the flowchart. \"Okay, Charlie, walk us through it,\" she urges, her fingers already itching to rewrite the problematic code. Charlie, oblivious to the raised eyebrows and stifled chuckles, taps furiously at the whiteboard with his marker, a manic gleam in his eyes. \"See, here!\" he cries, circling the 'renderTexture' function with increasing fervor. \"Every time this function is called, it allocates a new texture, but it never explicitly releases the old one! The garbage collector *should* be taking care of it, but it's lagging behind, causing a massive buildup of unused memory! It's like a digital hoarder's paradise in there!\" He steps back, panting slightly, and gestures dramatically at the board. Anna, who had been silently observing, finally speaks, her voice calm and measured. \"So, a classic memory leak. Alright, Alice, can you implement a manual memory release after each frame? Bob, keep an eye on the memory usage in the debugger. Charlie, you're on garbage collection duty \u2013 make sure those cosmic rays aren't messing with anything else.\"",
+                "timestamp": 59.400000000000006,
+                "camera_angle": "Medium shot, focusing on Charlie as he gestures wildly at the whiteboard, capturing the expressions of Alice, Bob, and Anna as they react to his explanation. The camera slightly favors Alice, highlighting her eagerness to dive back into the code.",
+                "scene_id": "11f10cda-1470-4572-9dfe-69711f8b0134",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_8b3946f3-3aa0-41db-96f5-be7a4c06280c_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_8b3946f3-3aa0-41db-96f5-be7a4c06280c_frame.png",
+                "dialogues": [
+                    {
+                        "id": "13934f30-5be9-4d52-8740-7800180a6165",
+                        "text": "\"See, here! Every time this function is called, it allocates a new texture, but it never explicitly releases the old one!\"",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "excited",
+                        "event_id": "8b3946f3-3aa0-41db-96f5-be7a4c06280c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    },
+                    {
+                        "id": "29482417-ed19-48eb-b974-3f3dcfb5bbc6",
+                        "text": "\"Cosmic rays, Charlie?\"",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "amused",
+                        "event_id": "8b3946f3-3aa0-41db-96f5-be7a4c06280c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "a97a8b53-bd7a-405a-b042-698afa8bb3ed",
+                        "text": "\"Okay, Charlie, walk us through it,\"",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "determined",
+                        "event_id": "8b3946f3-3aa0-41db-96f5-be7a4c06280c",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    }
+                ]
+            },
+            {
+                "id": "8fdab197-5df6-41b3-b702-b5eefb9423b7",
+                "description": "Alice's fingers fly across the keyboard, her eyes darting between the flowchart and her code editor. The rhythmic tap-tap-tapping of the keys fills the tense silence as she adds a 'releaseTexture()' call after each frame render. A bead of sweat trickles down her temple, but she ignores it, completely absorbed in the task. Bob, hunched over his monitor, navigates the debugger with practiced ease. A graph displaying memory usage flickers on the screen, a jagged line steadily climbing. He mutters to himself, \"Come on, Alice, work your magic...\" Charlie, meanwhile, paces behind them, occasionally stopping to peer over their shoulders. He chews nervously on the end of his marker, his eyes darting around the room as if searching for rogue cosmic particles. He mutters about \"quantum entanglement\" and \"bit flips,\" his anxiety palpable. Suddenly, Bob straightens up, a look of cautious optimism spreading across his face. \"Okay, Alice, try running it now! The memory usage seems to be stabilizing!\" Alice hits the 'run' button, her breath held tight. The program compiles, and the application window flickers to life. Everyone stares intently at the screen, watching the memory usage graph like hawks. The line, which had been steadily climbing, now begins to plateau, then slowly descends. A collective sigh of relief sweeps through the room. Anna nods approvingly. \"Good work, Alice. Bob, keep monitoring it. Charlie, try to relax; I think we've contained the cosmic threat... for now.\"",
+                "timestamp": 115.80000000000001,
+                "camera_angle": "Medium shot, focusing on Alice's hands as they dance across the keyboard, then panning to Bob's monitor displaying the memory usage graph, and finally showing Charlie pacing anxiously in the background.",
+                "scene_id": "11f10cda-1470-4572-9dfe-69711f8b0134",
+                "image_path": null,
+                "sound_cues": "[\"magic\"]",
+                "video_paths": [
+                    "videos/event_8fdab197-5df6-41b3-b702-b5eefb9423b7_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_8fdab197-5df6-41b3-b702-b5eefb9423b7_frame.png",
+                "dialogues": [
+                    {
+                        "id": "53bf87f0-3957-4e58-9a84-21488429e83c",
+                        "text": "Come on, Alice, work your magic...",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "hopeful",
+                        "event_id": "8fdab197-5df6-41b3-b702-b5eefb9423b7",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "e06f82eb-d1e5-4159-a87d-92f3aad44a70",
+                        "text": "Okay, Alice, try running it now! The memory usage seems to be stabilizing!",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "optimistic",
+                        "event_id": "8fdab197-5df6-41b3-b702-b5eefb9423b7",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    }
+                ]
+            },
+            {
+                "id": "53d4522a-2e69-46d1-9cc8-5115f6fb7e23",
+                "description": "A fragile calm descends upon the conference room as the application hums along, its memory footprint seemingly under control. Alice slumps back in her chair, the tension visibly draining from her face. She closes her eyes for a moment, savoring the brief respite. 'Finally,' she thinks, 'a chance to breathe.' Bob remains vigilant, his gaze glued to the flickering graph. He taps a few keys, bringing up a detailed breakdown of memory allocation. His brow furrows slightly. 'Still some anomalies,' he muses, 'but nothing critical... yet.' Charlie, unable to fully suppress his anxiety, continues to fidget. He circles the table, muttering about potential edge cases and unforeseen consequences. He stops abruptly, pointing a trembling finger at the whiteboard. \"But what about the quantum flux capacitor?!\" he exclaims, his voice cracking with concern. Anna sighs, rubbing her temples. \"Charlie, there is no quantum flux capacitor in this system. Please, just try to stay positive.\" Suddenly, the application window freezes. The memory usage graph spikes violently, shooting off the screen. A loud, electronic screech fills the room. Alice's eyes snap open, her exhaustion instantly replaced by a surge of adrenaline. Bob curses under his breath, frantically clicking his mouse. Charlie throws his hands up in the air, shouting, \"I knew it! The bit flips are upon us!\" The brief moment of peace shatters, replaced by a renewed sense of urgency and impending doom.",
+                "timestamp": 168.8,
+                "camera_angle": "Medium shot, focusing on Alice as her eyes snap open. The background shows Bob's frustrated reaction and Charlie's panicked outburst, conveying the renewed chaos.",
+                "scene_id": "11f10cda-1470-4572-9dfe-69711f8b0134",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_53d4522a-2e69-46d1-9cc8-5115f6fb7e23_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_53d4522a-2e69-46d1-9cc8-5115f6fb7e23_frame.png",
+                "dialogues": [
+                    {
+                        "id": "07b17dfb-62dc-4e73-9cb9-f0f0dc612301",
+                        "text": "Finally, a chance to breathe.",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "relieved",
+                        "event_id": "53d4522a-2e69-46d1-9cc8-5115f6fb7e23",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "1594a7ae-4340-4a13-a658-4ba93c1f2aef",
+                        "text": "Charlie, there is no quantum flux capacitor in this system. Please, just try to stay positive.",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "exasperated",
+                        "event_id": "53d4522a-2e69-46d1-9cc8-5115f6fb7e23",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "4dac4884-c99d-49f4-b27e-aacbaf48e260",
+                        "text": "But what about the quantum flux capacitor?!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "anxious",
+                        "event_id": "53d4522a-2e69-46d1-9cc8-5115f6fb7e23",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    },
+                    {
+                        "id": "72c26d2d-ea6c-454b-a18f-fae9b759268a",
+                        "text": "I knew it! The bit flips are upon us!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "panicked",
+                        "event_id": "53d4522a-2e69-46d1-9cc8-5115f6fb7e23",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    },
+                    {
+                        "id": "c740ed29-5e83-4acf-b3dd-df1f881c46aa",
+                        "text": "Still some anomalies, but nothing critical... yet.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "concerned",
+                        "event_id": "53d4522a-2e69-46d1-9cc8-5115f6fb7e23",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    }
+                ]
+            },
+            {
+                "id": "01f4b061-6e8a-4744-b95c-0013842687d4",
+                "description": "Panic erupts. Alice slams her fist on the table, the jolt momentarily clearing her head. \"Dump the memory! Now!\" she barks, her voice sharp and commanding. Her fingers fly across the keyboard, initiating a diagnostic routine. A window flashes on her screen, displaying a cascade of hexadecimal code. 'Corrupted heap,' she realizes grimly. 'Something wrote where it shouldn't have.' Bob, his face pale, frantically tries to isolate the faulty module. He clicks through layers of debugging tools, his hands shaking slightly. 'Damn it, where is it coming from?' he thinks, sweat beading on his forehead. Charlie, in a fit of despair, collapses into his chair, burying his face in his hands. \"It's all over! We're doomed! The singularity is here!\" he wails, his voice muffled. Anna, despite her initial frustration, steps into action. She strides over to the whiteboard, grabbing a marker. With swift, decisive strokes, she begins to retrace the flowchart, searching for a logical flaw. Her eyes narrow in concentration, her mind racing to identify the source of the error. The room buzzes with the frantic energy of a team fighting against a rapidly escalating crisis. The air crackles with tension as they desperately try to salvage their work before it's too late.",
+                "timestamp": 223.8,
+                "camera_angle": "A medium shot focusing on Alice's hands as they rapidly type on the keyboard, interspersed with quick cuts to Bob's stressed face and Charlie's dramatic meltdown. The camera then pans to Anna, highlighting her focused determination as she works at the whiteboard.",
+                "scene_id": "11f10cda-1470-4572-9dfe-69711f8b0134",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_01f4b061-6e8a-4744-b95c-0013842687d4_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_01f4b061-6e8a-4744-b95c-0013842687d4_frame.png",
+                "dialogues": [
+                    {
+                        "id": "134c4ca2-0fb7-4031-b519-8e6a3fe0af16",
+                        "text": "Damn it, where is it coming from?",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "frustrated",
+                        "event_id": "01f4b061-6e8a-4744-b95c-0013842687d4",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "2ba907f1-86fe-426f-b5ed-ab8e342a9410",
+                        "text": "Dump the memory! Now!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "urgent",
+                        "event_id": "01f4b061-6e8a-4744-b95c-0013842687d4",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "fe4128ad-fcee-4114-9abe-315e4dbefe7a",
+                        "text": "It's all over! We're doomed! The singularity is here!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "despair",
+                        "event_id": "01f4b061-6e8a-4744-b95c-0013842687d4",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "scene": {
+            "id": "62389387-437f-4248-bbfe-2ba08c0b4b8e",
+            "scene_number": 2,
+            "location": "Anna's Apartment - Living Room",
+            "description": "Anna's living room is small but tidy. A futon sits against one wall, covered with a colorful, slightly rumpled blanket. A small coffee table in front of the futon is littered with takeout containers and empty energy drink cans. A whiteboard, covered in flowcharts and code snippets, leans against another wall. A laptop sits open on the coffee table, displaying lines of code. The room is generally neat, but clearly lived in and functional, not decorative. A small window offers a view of the city skyline, now bathed in the soft glow of early evening.",
+            "image_path": null,
+            "time_of_day": "Early Evening",
+            "lighting": "The room is lit by a combination of the fading natural light from the window and the harsh blue light emanating from the laptop screen. A small desk lamp provides a pool of warmer light near the whiteboard.",
+            "camera_setup": "The scene opens with a wide shot of the living room, establishing the space. The camera then slowly zooms in on Anna, who is sitting cross-legged on the futon, staring intently at her laptop screen. There are occasional close-ups of the whiteboard and the city view to emphasize Anna's mental state and the external world.",
+            "mood": "Tired, determined, slightly melancholic. Anna is clearly exhausted from the day's debugging marathon, but she's also driven by a sense of responsibility and a desire to solve the problem. There's an underlying feeling of isolation as she works alone in her apartment.",
+            "setting_details": "The remnants of Anna's dinner (takeout containers) and caffeine fuel (energy drink cans) are scattered around her, highlighting the intensity of her work habits. The whiteboard filled with code diagrams suggests that she's still actively engaged in problem-solving, even outside of work hours. The city lights twinkling in the distance offer a contrast to the focused intensity of her apartment, hinting at the world outside and the sacrifices she's making."
+        },
+        "characters": [
+            {
+                "id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                "name": "Alice Codebreaker",
+                "description": "Alice is a young, energetic software developer with bright pink hair usually tied up in a messy bun. She wears oversized glasses and has a perpetually tired but determined look. Her clothing style is casual and comfortable, often consisting of hoodies and jeans.",
+                "personality_traits": [
+                    "Enthusiastic",
+                    "Problem-solver",
+                    "Team player"
+                ]
+            },
+            {
+                "id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                "name": "Bob Debugger",
+                "description": "Bob is a seasoned software developer, slightly overweight with a receding hairline. He often sports a neatly trimmed beard and wears button-down shirts, even in a casual office environment. He has a calm and collected demeanor.",
+                "personality_traits": [
+                    "Patient",
+                    "Analytical",
+                    "Mentor"
+                ]
+            },
+            {
+                "id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                "name": "Charlie Compiler",
+                "description": "Charlie is a quirky and eccentric developer with a lanky build and wild, unkempt hair. He has a habit of wearing mismatched socks and coding-themed t-shirts. He is often seen muttering to himself while working.",
+                "personality_traits": [
+                    "Creative",
+                    "Independent",
+                    "Perfectionist"
+                ]
+            }
+        ],
+        "events": [
+            {
+                "id": "8fce45eb-807d-4d8b-8c61-7287cffa18b7",
+                "description": "Alice, perched precariously on the edge of the futon, slams her fist on the table, rattling the energy drink cans. \"I've been staring at this bug for six hours!\" she exclaims, her voice laced with frustration. Her pink hair threatens to escape its messy bun as she leans closer to the laptop screen, her eyes scanning the code with laser-like focus. Bob, seated calmly in a folding chair he's brought in, sips from a mug that reads 'World's Best Debugger'. He raises an eyebrow, a flicker of amusement in his eyes. \"Six hours, huh? Amateurs,\" he murmurs, barely audible. Charlie, oblivious to the drama unfolding, stands by the whiteboard, muttering to himself and scribbling furiously with a marker. He circles a particularly convoluted flowchart segment, his brow furrowed in concentration. \"If... then... but only if... unless...\" he mumbles, lost in the labyrinth of logic. Alice, ignoring Bob's jab, runs a hand through her hair, leaving a streak of pink dye on her forehead. She feels a surge of determination. 'I will conquer this bug,' she thinks, 'even if it's the last thing I do tonight.'",
+                "timestamp": 0.0,
+                "camera_angle": "Medium shot, focusing on Alice's frustrated expression, with Bob and Charlie visible in the background, showcasing their contrasting reactions.",
+                "scene_id": "62389387-437f-4248-bbfe-2ba08c0b4b8e",
+                "image_path": "images/event_8fce45eb-807d-4d8b-8c61-7287cffa18b7.png",
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_8fce45eb-807d-4d8b-8c61-7287cffa18b7_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_8fce45eb-807d-4d8b-8c61-7287cffa18b7_frame.png",
+                "dialogues": [
+                    {
+                        "id": "ae96c004-70fe-424f-b695-9a9d434a7bf5",
+                        "text": "Six hours, huh? Amateurs.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "amusement",
+                        "event_id": "8fce45eb-807d-4d8b-8c61-7287cffa18b7",
+                        "type": "spoken",
+                        "action": "sips from his mug",
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "c4153ae2-0c74-4a44-bb0f-850cc1f305f8",
+                        "text": "I've been staring at this bug for six hours!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "frustration",
+                        "event_id": "8fce45eb-807d-4d8b-8c61-7287cffa18b7",
+                        "type": "spoken",
+                        "action": "slams her fist on the table",
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "f7aa442c-4bd4-4563-ab87-3a641d5b6146",
+                        "text": "If... then... but only if... unless...",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "concentration",
+                        "event_id": "8fce45eb-807d-4d8b-8c61-7287cffa18b7",
+                        "type": "spoken",
+                        "action": "scribbling furiously with a marker",
+                        "speaker_name": "Charlie Compiler"
+                    }
+                ]
+            },
+            {
+                "id": "b49f15a5-0c58-4777-9c20-84794eb9e7d6",
+                "description": "Alice, fueled by caffeine and sheer willpower, suddenly throws her hands up in exasperation. \"Okay, I need a fresh pair of eyes on this!\" she cries, pushing the laptop towards Bob. Bob, ever the unflappable mentor, takes the laptop with a sigh, adjusting his glasses. He leans in, his gaze sweeping across the screen with practiced ease. Alice paces behind him, muttering the error messages under her breath. Charlie, jolted from his coding trance by Alice's outburst, blinks owlishly. He shuffles over, his mismatched socks peeking out from under his jeans. He peers at the screen over Bob's shoulder, his wild hair nearly obscuring the code. He taps his chin thoughtfully. \"Perhaps... a misplaced semicolon? Or maybe... an off-by-one error?\" he suggests, his voice a low rumble. Alice groans dramatically. 'Please, just let it be something simple,' she pleads silently, her anxiety mounting. Bob, with a quiet hum, scrolls through the code, a slight furrow appearing on his brow. He stops at a particular line, his finger hovering over it. \"Hmm,\" he says, his voice betraying a hint of intrigue. \"Looks like you're trying to access an array out of bounds.\"",
+                "timestamp": 41.0,
+                "camera_angle": "Medium shot, focusing on Bob's face as he examines the laptop screen, with Alice pacing anxiously in the background and Charlie peering over his shoulder.",
+                "scene_id": "62389387-437f-4248-bbfe-2ba08c0b4b8e",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_b49f15a5-0c58-4777-9c20-84794eb9e7d6_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_b49f15a5-0c58-4777-9c20-84794eb9e7d6_frame.png",
+                "dialogues": [
+                    {
+                        "id": "68a0928b-9923-47a2-943a-eadef28fa5a7",
+                        "text": "Hmm. Looks like you're trying to access an array out of bounds.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "intrigue",
+                        "event_id": "b49f15a5-0c58-4777-9c20-84794eb9e7d6",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "8944a050-e21d-4ee9-b481-19e5322e226f",
+                        "text": "Perhaps... a misplaced semicolon? Or maybe... an off-by-one error?",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "thoughtful",
+                        "event_id": "b49f15a5-0c58-4777-9c20-84794eb9e7d6",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    },
+                    {
+                        "id": "9d9221a1-01b7-4426-9f59-f2aa4d610e40",
+                        "text": "Okay, I need a fresh pair of eyes on this!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "exasperation",
+                        "event_id": "b49f15a5-0c58-4777-9c20-84794eb9e7d6",
+                        "type": "spoken",
+                        "action": "pushes the laptop towards Bob",
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "a1c026ea-f451-4446-be4e-7720a83e2caa",
+                        "text": "Please, just let it be something simple.",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "anxiety",
+                        "event_id": "b49f15a5-0c58-4777-9c20-84794eb9e7d6",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    }
+                ]
+            },
+            {
+                "id": "7a836613-9706-482f-b7f8-d59b0f456895",
+                "description": "Alice's shoulders slump as Bob confirms her worst fear. \"Out of bounds? Seriously?\" she moans, running a hand through her already disheveled pink hair, further loosening the messy bun. She feels a wave of frustration wash over her; hours of work, potentially wasted by a simple indexing error. Bob, unfazed, points to the offending line. \"See here? You're using 'i' as your index, but you're incrementing it beyond the array's length within the loop.\" He calmly explains the logic, his finger tracing the flow of the code. Charlie, still peering intently, suddenly straightens up, his eyes widening behind his thick glasses. He snaps his fingers. \"Wait! What if we use a modulo operator? That would wrap the index back around!\" He grabs a marker from the coffee table, nearly knocking over an empty energy drink can, and begins scribbling on the whiteboard, his unkempt hair flying. Alice stares at the whiteboard, a flicker of hope igniting within her. 'Could it be that simple?' she wonders, her anxiety slowly giving way to cautious optimism. Bob strokes his beard thoughtfully, considering Charlie's suggestion. A slow smile spreads across his face. \"That's... actually quite clever, Charlie. It might just work.\"",
+                "timestamp": 86.80000000000001,
+                "camera_angle": "Medium shot, focusing on the laptop screen and Bob's finger pointing at the code, with Alice and Charlie visible in the background, reacting to the explanation and suggestion.",
+                "scene_id": "62389387-437f-4248-bbfe-2ba08c0b4b8e",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_7a836613-9706-482f-b7f8-d59b0f456895_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_7a836613-9706-482f-b7f8-d59b0f456895_frame.png",
+                "dialogues": [
+                    {
+                        "id": "51b579f1-89e2-4724-9ffb-b74198b5e663",
+                        "text": "Out of bounds? Seriously?",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "frustration",
+                        "event_id": "7a836613-9706-482f-b7f8-d59b0f456895",
+                        "type": "spoken",
+                        "action": "Alice runs a hand through her already disheveled pink hair.",
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "a6b0440b-0944-43ac-bbf2-a4279499b800",
+                        "text": "That's... actually quite clever, Charlie. It might just work.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "thoughtful",
+                        "event_id": "7a836613-9706-482f-b7f8-d59b0f456895",
+                        "type": "spoken",
+                        "action": "A slow smile spreads across Bob's face.",
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "ce64e802-4683-48f9-a1c3-b77db64b22ca",
+                        "text": "See here? You're using 'i' as your index, but you're incrementing it beyond the array's length within the loop.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "calm",
+                        "event_id": "7a836613-9706-482f-b7f8-d59b0f456895",
+                        "type": "spoken",
+                        "action": "Bob points to the offending line of code.",
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "dfe02a68-0240-4376-8f4c-5fbbfc1cf07c",
+                        "text": "Wait! What if we use a modulo operator? That would wrap the index back around!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "excited",
+                        "event_id": "7a836613-9706-482f-b7f8-d59b0f456895",
+                        "type": "spoken",
+                        "action": "Charlie snaps his fingers.",
+                        "speaker_name": "Charlie Compiler"
+                    }
+                ]
+            },
+            {
+                "id": "b210c551-2ae1-4e91-957d-7cb0a71ea8ac",
+                "description": "Charlie, fueled by a sudden burst of inspiration, attacks the whiteboard with fervor. The marker squeaks as he furiously diagrams the modulo operation, circles and arrows intertwining with code snippets. He explains his idea with rapid-fire enthusiasm, his voice rising in pitch as he gets to the core of the solution. \"So, 'i' modulo the array length! It loops back! It's elegant! It's... beautiful!\" He steps back, beaming, a smudge of ink on his cheek. Alice, initially overwhelmed by Charlie's manic energy, now focuses intently on the whiteboard. The modulo operator, a mathematical concept she hadn't considered in this context, suddenly seems like the perfect key. A grin spreads across her face. \"Okay, okay, I see it! It's like... it's like the array is a circular buffer!\" She snatches the laptop and begins typing furiously, her fingers flying across the keyboard. Bob watches them both, a paternal smile on his face. He leans back against the wall, arms crossed, a quiet confidence radiating from him. He knows that even if this specific solution doesn't pan out, the collaborative energy and creative problem-solving are exactly what they need to conquer this bug. He thinks to himself, 'That's why I love this team, they never give up'.",
+                "timestamp": 135.60000000000002,
+                "camera_angle": "Medium shot, focusing on Alice and Charlie at the whiteboard, with Bob in the background slightly out of focus, conveying the shift in focus from Bob's initial explanation to Charlie's solution and Alice's implementation.",
+                "scene_id": "62389387-437f-4248-bbfe-2ba08c0b4b8e",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_b210c551-2ae1-4e91-957d-7cb0a71ea8ac_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_b210c551-2ae1-4e91-957d-7cb0a71ea8ac_frame.png",
+                "dialogues": [
+                    {
+                        "id": "41230ba1-3906-45a4-bd08-d82d6c3ebc50",
+                        "text": "So, 'i' modulo the array length! It loops back! It's elegant! It's... beautiful!",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "excited",
+                        "event_id": "b210c551-2ae1-4e91-957d-7cb0a71ea8ac",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    },
+                    {
+                        "id": "877a9706-7de0-4184-9a82-2b31e06243d8",
+                        "text": "Okay, okay, I see it! It's like... it's like the array is a circular buffer!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "excited",
+                        "event_id": "b210c551-2ae1-4e91-957d-7cb0a71ea8ac",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "c09f0530-efe3-4be2-89a4-96f69e5c57cb",
+                        "text": "That's why I love this team, they never give up.",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "happy",
+                        "event_id": "b210c551-2ae1-4e91-957d-7cb0a71ea8ac",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    }
+                ]
+            },
+            {
+                "id": "6c4d1d5f-2ff9-46d4-aaf6-1c50eb39dfdd",
+                "description": "Alice's fingers dance across the keyboard, the rhythmic clatter filling the small living room. Lines of code materialize on the screen, a digital manifestation of Charlie's modulo-inspired epiphany. She's lost in the flow, her brow furrowed in concentration, occasionally muttering lines of code under her breath. Bob pushes himself off the wall and ambles over to Alice, peering over her shoulder. He squints at the screen, his eyes scanning the newly written code. A thoughtful frown creases his forehead as he spots a potential pitfall. \"Alice, hold up,\" he says gently, pointing to a specific line. \"What happens when 'i' is zero? Won't that cause a division by zero error in this particular case?\". Alice freezes, her fingers hovering over the 'enter' key. Her eyes widen as the realization dawns on her. She hadn't accounted for that edge case. A frustrated sigh escapes her lips. Charlie, who had been pacing excitedly, stops abruptly. The color drains from his face as he understands the implication of Bob's question. His brilliant solution, so elegant in theory, is flawed in practice. He sinks onto the futon, deflated. 'Oh no, it was too good to be true', he thinks. Alice, however, quickly recovers. A spark of determination reignites in her eyes. \"Okay, okay, good catch, Bob!\" she exclaims. \"We just need to add a conditional statement to handle the zero case. It's a simple fix!\". She attacks the keyboard again, her fingers flying even faster than before. The room is filled with a renewed sense of purpose, the initial setback only serving to fuel their resolve.",
+                "timestamp": 184.20000000000002,
+                "camera_angle": "Medium shot, focusing on Alice's face and hands as she types, with Bob leaning in from the side and Charlie slumped on the futon in the background.",
+                "scene_id": "62389387-437f-4248-bbfe-2ba08c0b4b8e",
+                "image_path": null,
+                "sound_cues": "[]",
+                "video_paths": [
+                    "videos/event_6c4d1d5f-2ff9-46d4-aaf6-1c50eb39dfdd_v0.mp4"
+                ],
+                "selected_frame_path": "images/event_6c4d1d5f-2ff9-46d4-aaf6-1c50eb39dfdd_frame.png",
+                "dialogues": [
+                    {
+                        "id": "51b84f3f-8d91-4b6f-a9fe-cc4b9268e7cd",
+                        "text": "Alice, hold up. What happens when 'i' is zero? Won't that cause a division by zero error in this particular case?",
+                        "speaker_id": "32b0a8de-50bb-49c8-9a20-56a531864002",
+                        "emotion": "concerned",
+                        "event_id": "6c4d1d5f-2ff9-46d4-aaf6-1c50eb39dfdd",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Bob Debugger"
+                    },
+                    {
+                        "id": "e8f6b07a-c9aa-452e-8b07-e4b7e1353163",
+                        "text": "Okay, okay, good catch, Bob! We just need to add a conditional statement to handle the zero case. It's a simple fix!",
+                        "speaker_id": "8860631d-eb5c-4d7c-bdbd-1a34cc0f429d",
+                        "emotion": "determined",
+                        "event_id": "6c4d1d5f-2ff9-46d4-aaf6-1c50eb39dfdd",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Alice Codebreaker"
+                    },
+                    {
+                        "id": "ec9f09da-5e2b-447f-bdbb-eb770ec7465b",
+                        "text": "Oh no, it was too good to be true.",
+                        "speaker_id": "56fe7c8b-4636-4586-a786-a538f6f3ddbe",
+                        "emotion": "disappointed",
+                        "event_id": "6c4d1d5f-2ff9-46d4-aaf6-1c50eb39dfdd",
+                        "type": "spoken",
+                        "action": null,
+                        "speaker_name": "Charlie Compiler"
+                    }
+                ]
+            }
+        ]
+    }
+]
