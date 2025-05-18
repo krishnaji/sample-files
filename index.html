@@ -1,1 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplified 3D Servo Arm UI with ESP32 Control (Dual Servo & Physical Replay)</title>
+    <style>
+        /* Styles remain the same */
+        body { margin: 0; overflow: hidden; font-family: sans-serif; background-color: #f0f0f0; }
+        canvas { display: block; width: 100%; height: 100%; }
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            color: #333;
+            z-index: 100;
+            display:block;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px 0;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px 18px;
+            align-items: center;
+            z-index: 101;
+            max-width: 95%; /* Adjusted for more controls */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .control-group label {
+            margin-bottom: 5px;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+        .control-group input[type="range"] {
+            width: 90px;
+            cursor: pointer;
+        }
+        .control-group input[type="text"] { /* Style for IP address input */
+            width: 120px;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+        .control-group span {
+            font-size: 0.75em;
+            min-width: 30px;
+            text-align: center;
+            margin-top: 3px;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-left: 15px;
+            align-items: center;
+            flex-basis: 100%;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .button-group button {
+             padding: 8px 12px;
+             background-color: #007bff;
+             color: white;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             font-size: 0.85em;
+             transition: background-color 0.3s ease;
+        }
+        .button-group button:hover {
+            background-color: #0056b3;
+        }
+         .button-group button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+         #waterToggle {
+            background-color: #4CAF50;
+         }
+         #waterToggle.off {
+            background-color: #f44336;
+         }
+         #clearSequence {
+             background-color: #ffc107;
+             color: #333;
+         }
+         #clearSequence:hover {
+             background-color: #e0a800;
+         }
+         #sequenceInfo {
+            font-size: 0.8em;
+            margin-left: 10px;
+            white-space: nowrap;
+         }
+         #replayStatus, #espStatus { /* Added espStatus */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1em;
+            z-index: 102;
+            display: none;
+            text-align: center;
+         }
+         #espStatus { /* Specific styling for ESP status messages */
+            top: calc(50% + 60px); /* Position below replay status, adjusted for potential longer messages */
+            background-color: rgba(255, 100, 100, 0.8); /* Default to error-like if no other class */
+         }
+         #espStatus.success {
+             background-color: rgba(100, 255, 100, 0.8); /* Success color */
+             color: #333;
+         }
+          #espStatus.error { /* Explicit error class styling */
+             background-color: rgba(255, 100, 100, 0.8);
+             color: white;
+         }
+    </style>
+</head>
+<body>
+    <div id="info">Drag mouse to rotate view, scroll to zoom. Use controls below.</div>
+    <div id="replayStatus">Replaying Sequence...</div>
+    <div id="espStatus">ESP32 Status</div>
+    <div id="controls">
+        <div class="control-group">
+            <label for="espIpAddress">Handy Arm Address:</label>
+            <input type="text" id="espIpAddress" placeholder="e.g., 192.168.4.1" value="192.168.4.1">
+        </div>
+        <div class="control-group">
+            <label for="baseRotation">Base Rotation</label>
+            <input type="range" id="baseRotation" min="0" max="180" value="90" step="1">
+            <span id="baseRotationValue">90°</span>
+        </div>
+        <div class="control-group">
+            <label for="arm1Pitch">Arm Pitch</label>
+            <input type="range" id="arm1Pitch" min="-60" max="60" value="0" step="1">
+            <span id="arm1PitchValue">90°</span>
+        </div>
+        <div class="control-group">
+            <label for="waterSpeed">Water Pressure</label>
+            <input type="range" id="waterSpeed" min="5" max="40" value="20" step="1">
+            <span id="waterSpeedValue">20</span>
+        </div>
+        <div class="button-group">
+             <button id="waterToggle">Water ON</button>
+             <button id="savePosition">Save Position</button>
+             <button id="replaySequence">Replay Sequence</button>
+             <button id="clearSequence">Clear Sequence</button>
+             <span id="sequenceInfo">Saved: 0</span>
+        </div>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script>
+        // --- Global Variables ---
+        let scene, camera, renderer, orbitControls;
+        let lawn, servoBase, arm1, arm1Emitter;
+        let arm1Pivot;
+        let waterParticles, particleSystem;
+        const waterParticleCount = 500;
+        let isWatering = true;
+        let waterBaseSpeed = 20;
+
+        let lawnTextureCanvas, lawnTextureContext, lawnTexture;
+        const lawnTextureSize = 512;
+        const lawnWidth = 200, lawnHeight = 200;
+        const dryLawnColor = '#228b22';
+        const wetLawnColor = 'rgba(20, 80, 30, 0.1)';
+
+        let baseRotationSlider, arm1PitchSlider, waterSpeedSlider;
+        let baseRotationValueSpan, arm1PitchValueSpan, waterSpeedValueSpan;
+        let waterToggleButton, savePositionButton, replaySequenceButton, clearSequenceButton;
+        let sequenceInfoSpan, replayStatusDiv, espIpAddressInput, espStatusDiv;
+
+        let savedSequence = [];
+        let isReplaying = false;
+        let replayStepIndex = 0;
+        let transitionStartTime = 0;
+        const transitionDuration = 1000; // ms
+        let startState = null;
+        let targetState = null;
+        let transitionFrameId = null;
+
+        // --- Initialization ---
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x87ceeb);
+            scene.fog = new THREE.Fog(0x87ceeb, 100, 300);
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.set(15, 15, 40);
+            camera.lookAt(0, 0, 0);
+            renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.shadowMap.enabled = true;
+            document.body.appendChild(renderer.domElement);
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+            scene.add(ambientLight);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+            directionalLight.position.set(30, 50, 20);
+            directionalLight.castShadow = true;
+            directionalLight.shadow.mapSize.width = 1024;
+            directionalLight.shadow.mapSize.height = 1024;
+            scene.add(directionalLight);
+            orbitControls = new THREE.OrbitControls(camera, renderer.domElement);
+            orbitControls.enableDamping = true;
+            orbitControls.dampingFactor = 0.05;
+            orbitControls.screenSpacePanning = false;
+            orbitControls.minDistance = 10;
+            orbitControls.maxDistance = 100;
+            orbitControls.maxPolarAngle = Math.PI / 2 - 0.05;
+
+            createLawn();
+            createServoArm();
+            createWaterParticles();
+            setupUIControls();
+            window.addEventListener('resize', onWindowResize, false);
+            resetWaterParticles();
+        }
+
+        // --- Object Creation ---
+        function createLawn() {
+            lawnTextureCanvas = document.createElement('canvas');
+            lawnTextureCanvas.width = lawnTextureSize;
+            lawnTextureCanvas.height = lawnTextureSize;
+            lawnTextureContext = lawnTextureCanvas.getContext('2d');
+            lawnTextureContext.fillStyle = dryLawnColor;
+            lawnTextureContext.fillRect(0, 0, lawnTextureSize, lawnTextureSize);
+            lawnTexture = new THREE.CanvasTexture(lawnTextureCanvas);
+            lawnTexture.needsUpdate = true;
+            const lawnGeometry = new THREE.PlaneGeometry(lawnWidth, lawnHeight);
+            const lawnMaterial = new THREE.MeshStandardMaterial({
+                map: lawnTexture, side: THREE.DoubleSide, roughness: 0.8, metalness: 0.1
+            });
+            lawn = new THREE.Mesh(lawnGeometry, lawnMaterial);
+            lawn.rotation.x = -Math.PI / 2;
+            lawn.position.y = -0.1;
+            lawn.receiveShadow = true;
+            scene.add(lawn);
+        }
+        function createServoArm() {
+             const baseMaterial = new THREE.MeshStandardMaterial({ color: 0x606060, roughness: 0.5, metalness: 0.5 });
+             const armMaterial = new THREE.MeshStandardMaterial({ color: 0xd3d3d3, roughness: 0.6, metalness: 0.4 });
+             const baseGeometry = new THREE.CylinderGeometry(2, 2, 1, 32);
+             servoBase = new THREE.Mesh(baseGeometry, baseMaterial);
+             servoBase.position.y = 0.5;
+             servoBase.castShadow = true;
+             servoBase.receiveShadow = true;
+             scene.add(servoBase);
+             arm1Pivot = new THREE.Object3D();
+             arm1Pivot.position.y = 0.5;
+             servoBase.add(arm1Pivot);
+             const arm1Geometry = new THREE.BoxGeometry(1.5, 8, 1.5);
+             arm1 = new THREE.Mesh(arm1Geometry, armMaterial);
+             arm1.position.y = 4;
+             arm1.castShadow = true;
+             arm1.receiveShadow = true;
+             arm1Pivot.add(arm1);
+             arm1Emitter = new THREE.Object3D();
+             arm1Emitter.position.y = 4; // Relative to arm1's center
+             arm1.add(arm1Emitter);
+        }
+        function createWaterParticles() {
+             const particleGeometry = new THREE.BufferGeometry();
+            const positions = [];
+            const velocities = []; // Will store THREE.Vector3 instances
+            const particleMaterial = new THREE.PointsMaterial({
+                color: 0xaaaaee, size: 0.3, transparent: true, opacity: 0.7,
+                blending: THREE.AdditiveBlending, depthWrite: false
+            });
+            for (let i = 0; i < waterParticleCount; i++) {
+                positions.push(0, 0, 0); // Initial positions, will be updated
+                velocities.push(new THREE.Vector3()); // Store Vector3 for each particle's velocity
+            }
+            particleGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+            particleGeometry.userData.velocities = velocities; // Store velocities array in userData
+            particleSystem = new THREE.Points(particleGeometry, particleMaterial);
+            particleSystem.visible = isWatering;
+            scene.add(particleSystem);
+        }
+
+        // --- UI Controls Setup ---
+        function setupUIControls() {
+            espIpAddressInput = document.getElementById('espIpAddress');
+            espStatusDiv = document.getElementById('espStatus');
+            baseRotationSlider = document.getElementById('baseRotation');
+            arm1PitchSlider = document.getElementById('arm1Pitch');
+            waterSpeedSlider = document.getElementById('waterSpeed');
+            baseRotationValueSpan = document.getElementById('baseRotationValue');
+            arm1PitchValueSpan = document.getElementById('arm1PitchValue');
+            waterSpeedValueSpan = document.getElementById('waterSpeedValue');
+            waterToggleButton = document.getElementById('waterToggle');
+            savePositionButton = document.getElementById('savePosition');
+            replaySequenceButton = document.getElementById('replaySequence');
+            clearSequenceButton = document.getElementById('clearSequence');
+            sequenceInfoSpan = document.getElementById('sequenceInfo');
+            replayStatusDiv = document.getElementById('replayStatus');
+
+            baseRotationSlider.addEventListener('input', handleSliderInput);
+            arm1PitchSlider.addEventListener('input', handleSliderInput);
+            waterSpeedSlider.addEventListener('input', handleSliderInput);
+            waterToggleButton.addEventListener('click', toggleWater);
+            savePositionButton.addEventListener('click', savePosition);
+            replaySequenceButton.addEventListener('click', startReplay);
+            clearSequenceButton.addEventListener('click', clearSequence);
+
+            updateSliderDisplays(); // This will now correctly set the initial arm1PitchValue span
+            updateSequenceInfo();
+            updateWaterButton();
+        }
+
+        // --- ESP32 Communication ---
+        async function sendServoCommand(servoName, angle) {
+            const ipAddress = espIpAddressInput.value.trim();
+            if (!ipAddress) {
+                showEspStatus("Error: ESP32 IP Address is not set.", true);
+                return;
+            }
+            const url = `http://${ipAddress}/set_servo_${servoName}?angle=${angle}`;
+            console.log(`Sending command to ESP32: ${url}`);
+            const servoNameDisplay = servoName.charAt(0).toUpperCase() + servoName.slice(1);
+            showEspStatus(`Sending: ${servoNameDisplay} to ${angle}°...`, false, true); // Pending state
+            try {
+                // Using 'no-cors' mode means we won't get a response back directly,
+                // which is common for simple ESP32 control if the ESP doesn't send CORS headers.
+                // The request is "fire and forget".
+                await fetch(url, { mode: 'no-cors' });
+                console.log(`Command for ${servoNameDisplay} to ${angle}° dispatched.`);
+                showEspStatus(`${servoNameDisplay} command to ${angle}° dispatched.`, false); // Success state
+            } catch (error) {
+                // This catch block will typically only catch network errors (e.g., DNS resolution failure, ESP not reachable)
+                // It won't catch HTTP errors like 404 or 500 when mode is 'no-cors'.
+                console.error(`Error sending command for ${servoNameDisplay} to ESP32:`, error);
+                showEspStatus(`Network Error: Could not dispatch ${servoNameDisplay} command. Check connection/IP.`, true); // Error state
+            }
+        }
+
+        function showEspStatus(message, isError, isPending = false) {
+            espStatusDiv.textContent = message;
+            espStatusDiv.style.display = 'block';
+            espStatusDiv.classList.remove('success', 'error'); // Clear previous states
+            espStatusDiv.style.backgroundColor = ''; // Reset background color
+
+            if (isError) {
+                espStatusDiv.classList.add('error');
+            } else if (isPending) {
+                // Use a specific color for pending, e.g., a neutral blue or grey
+                espStatusDiv.style.backgroundColor = 'rgba(100, 100, 255, 0.8)'; // Blueish for pending
+            } else { // Success
+                espStatusDiv.classList.add('success');
+            }
+
+            // Automatically hide the message after some time, unless it's a pending message
+            if (!isPending) {
+                setTimeout(() => {
+                    espStatusDiv.style.display = 'none';
+                }, 3000);
+            }
+        }
+
+
+        // --- Helper for Physical Replay ---
+        function sendPhysicalCommandsForState(state) {
+            if (!state) {
+                console.warn("sendPhysicalCommandsForState: No state provided.");
+                return;
+            }
+
+            // --- Send Base Servo Command ---
+            // Base rotation is already in physical degrees (0-180)
+            const baseRotationUI = parseFloat(state.baseRotation);
+            if (!isNaN(baseRotationUI)) {
+                const baseAngle = parseInt(baseRotationUI.toFixed(0));
+                 sendServoCommand("base", baseAngle);
+            } else {
+                console.error("sendPhysicalCommandsForState: Invalid baseRotation in state", state);
+            }
+
+            // --- Send Arm1 Servo Command (with mapping) ---
+            // state.arm1Pitch is the UI pitch (-60 to +60)
+            const arm1PitchUI = parseFloat(state.arm1Pitch);
+            if (!isNaN(arm1PitchUI)) {
+                let physicalArm1Angle = 90 + arm1PitchUI; // UI pitch (-60 to +60) to physical (e.g., 30 to 150)
+                physicalArm1Angle = Math.max(0, Math.min(180, parseInt(physicalArm1Angle.toFixed(0)))); // Clamp to 0-180
+                sendServoCommand("arm1", physicalArm1Angle);
+                console.log(`Replay: Commanding Arm1 to UI pitch ${arm1PitchUI.toFixed(0)}° (Physical: ${physicalArm1Angle}°)`);
+            } else {
+                console.error("sendPhysicalCommandsForState: Invalid arm1Pitch in state", state);
+            }
+        }
+
+
+        // --- Event Handlers & UI Logic ---
+        function handleSliderInput(event) {
+            if (isReplaying) return; // Don't allow manual control during replay
+            const sliderId = event.target.id;
+            const value = parseFloat(event.target.value); // For arm1Pitch, this is UI pitch (-60 to +60)
+
+            switch (sliderId) {
+                case 'baseRotation':
+                    const baseAngleValue = parseInt(value); // Already 0-180
+                    servoBase.rotation.y = THREE.MathUtils.degToRad(baseAngleValue);
+                    baseRotationValueSpan.textContent = `${baseAngleValue}°`;
+                    sendServoCommand("base", baseAngleValue);
+                    break;
+                case 'arm1Pitch':
+                    // 'value' is the UI pitch from the slider (-60 to +60)
+                    arm1Pivot.rotation.x = THREE.MathUtils.degToRad(value); // Update 3D model with UI pitch
+
+                    // Calculate physical angle for display and ESP32 command
+                    let physicalArm1Angle = 90 + value; // Map UI pitch to physical angle
+                    physicalArm1Angle = Math.max(0, Math.min(180, parseInt(physicalArm1Angle.toFixed(0)))); // Clamp
+
+                    // MODIFIED: Display the calculated physical angle
+                    arm1PitchValueSpan.textContent = `${physicalArm1Angle}°`;
+
+                    // Send the calculated physical angle to ESP32
+                    sendServoCommand("arm1", physicalArm1Angle);
+                    break;
+                case 'waterSpeed':
+                    waterBaseSpeed = value;
+                    waterSpeedValueSpan.textContent = waterBaseSpeed.toFixed(0);
+                    // Note: Water speed change doesn't directly send an ESP command here,
+                    // it's used by the particle simulation.
+                    break;
+            }
+        }
+        function toggleWater() {
+             if (isReplaying) return;
+            isWatering = !isWatering;
+            particleSystem.visible = isWatering;
+            updateWaterButton();
+            if (isWatering) {
+                resetWaterParticles(); // Re-initialize particles if water is turned on
+            }
+            // Optionally, send a command to ESP32 if it controls a physical water valve
+            // sendServoCommand("water", isWatering ? 1 : 0); // Example: 1 for ON, 0 for OFF
+        }
+        function updateWaterButton() {
+             if (isWatering) {
+                 waterToggleButton.textContent = 'Water ON';
+                 waterToggleButton.classList.remove('off');
+             } else {
+                 waterToggleButton.textContent = 'Water OFF';
+                 waterToggleButton.classList.add('off');
+             }
+        }
+        function savePosition() {
+             if (isReplaying) return;
+            // Get current UI values for base rotation and arm pitch
+            const currentBaseRotationDeg = THREE.MathUtils.radToDeg(servoBase.rotation.y);
+            const currentArm1PitchDeg_UI = THREE.MathUtils.radToDeg(arm1Pivot.rotation.x); // This is UI pitch
+
+            const currentState = {
+                baseRotation: parseFloat(currentBaseRotationDeg.toFixed(1)), // Already physical
+                arm1Pitch: parseFloat(currentArm1PitchDeg_UI.toFixed(1)),   // Store UI pitch
+                waterSpeed: waterBaseSpeed,
+                isWatering: isWatering
+            };
+            savedSequence.push(currentState);
+            updateSequenceInfo();
+        }
+        function clearSequence() {
+            if (isReplaying) return;
+            if (confirm("Are you sure you want to clear the saved sequence?")) {
+                 savedSequence = [];
+                 updateSequenceInfo();
+                 if (isReplaying) { // Should not happen if button is disabled, but good check
+                     endReplay();
+                 }
+            }
+        }
+        function updateSequenceInfo() {
+            sequenceInfoSpan.textContent = `Saved: ${savedSequence.length}`;
+             replaySequenceButton.disabled = isReplaying || savedSequence.length === 0;
+             clearSequenceButton.disabled = isReplaying || savedSequence.length === 0;
+        }
+
+         function updateSliderDisplays() {
+            // Get current UI values for display
+            const displayBaseRotDeg = isReplaying && startState ? THREE.MathUtils.radToDeg(servoBase.rotation.y) : parseFloat(baseRotationSlider.value);
+
+            // This is the UI pitch value (-60 to +60) from the model or slider
+            const displayArm1PitchDeg_UI = isReplaying && startState ? THREE.MathUtils.radToDeg(arm1Pivot.rotation.x) : parseFloat(arm1PitchSlider.value);
+
+            const displayWaterSpeed = isReplaying && startState ? waterBaseSpeed : parseFloat(waterSpeedSlider.value);
+
+            // Update spans
+            baseRotationValueSpan.textContent = `${displayBaseRotDeg.toFixed(0)}°`;
+
+            // MODIFIED: Calculate and display physical arm pitch
+            let physicalArm1PitchDeg_Display = 90 + displayArm1PitchDeg_UI;
+            physicalArm1PitchDeg_Display = Math.max(0, Math.min(180, parseInt(physicalArm1PitchDeg_Display.toFixed(0))));
+            arm1PitchValueSpan.textContent = `${physicalArm1PitchDeg_Display}°`;
+
+            waterSpeedValueSpan.textContent = `${displayWaterSpeed.toFixed(0)}`;
+
+            // If replaying, update slider thumb positions to reflect the current state
+            if (isReplaying) {
+                baseRotationSlider.value = displayBaseRotDeg.toFixed(0);
+                // Slider thumb for arm1Pitch should reflect the UI pitch value
+                arm1PitchSlider.value = displayArm1PitchDeg_UI.toFixed(0);
+                waterSpeedSlider.value = displayWaterSpeed.toFixed(0);
+            }
+            // If not replaying, slider values are already the source of truth (except for initial load handled by parseFloat(slider.value))
+         }
+
+        // --- Replay Logic ---
+        function lerp(start, end, t) { return start * (1 - t) + end * t; }
+
+        function startReplay() {
+             if (isReplaying || savedSequence.length === 0) { return; }
+            isReplaying = true;
+            replayStepIndex = 0;
+            toggleUIControls(false); // Disable manual controls
+            replayStatusDiv.textContent = `Replaying Step 1 of ${savedSequence.length}...`;
+            replayStatusDiv.style.display = 'block';
+
+            // Current state of the 3D model (UI values)
+             startState = {
+                baseRotation: THREE.MathUtils.radToDeg(servoBase.rotation.y),      // Physical
+                arm1Pitch: THREE.MathUtils.radToDeg(arm1Pivot.rotation.x),       // UI pitch
+                waterSpeed: waterBaseSpeed,
+                isWatering: isWatering
+             };
+            targetState = savedSequence[replayStepIndex]; // Contains UI pitch for arm1
+
+            // Apply target watering state immediately
+            const previousWateringState = isWatering;
+            isWatering = targetState.isWatering;
+            particleSystem.visible = isWatering;
+            updateWaterButton();
+            if (isWatering && !previousWateringState) { resetWaterParticles(); }
+
+            console.log("Replay Start: Sending initial physical commands for first state.");
+            // sendPhysicalCommandsForState expects UI pitch for arm1 in targetState.arm1Pitch
+            sendPhysicalCommandsForState(targetState);
+
+            transitionStartTime = performance.now();
+            animateTransitionStep(transitionStartTime);
+        }
+
+        function animateTransitionStep(currentTime) {
+             if (!isReplaying) return;
+            const elapsedTime = currentTime - transitionStartTime;
+            let t = Math.min(elapsedTime / transitionDuration, 1);
+
+            // Interpolate UI values
+            const currentBaseRotationDeg = lerp(startState.baseRotation, targetState.baseRotation, t); // Physical
+            const currentArm1PitchDeg_UI = lerp(startState.arm1Pitch, targetState.arm1Pitch, t);     // UI pitch
+            waterBaseSpeed = lerp(startState.waterSpeed, targetState.waterSpeed, t);
+
+            // Update 3D model
+            servoBase.rotation.y = THREE.MathUtils.degToRad(currentBaseRotationDeg);
+            arm1Pivot.rotation.x = THREE.MathUtils.degToRad(currentArm1PitchDeg_UI); // Model uses UI pitch
+
+            updateSliderDisplays(); // This will correctly display physical arm angle from current UI pitch
+
+            if (t < 1) {
+                transitionFrameId = requestAnimationFrame(animateTransitionStep);
+            } else { // Transition to this step is complete
+                replayStepIndex++;
+                if (replayStepIndex < savedSequence.length) {
+                    replayStatusDiv.textContent = `Replaying Step ${replayStepIndex + 1} of ${savedSequence.length}...`;
+                    // Update startState for the next interpolation
+                    startState = targetState; // The previous target is now the start
+                    targetState = savedSequence[replayStepIndex]; // New target state
+
+                    // Apply target watering state for the new step
+                    const previousWateringState = isWatering;
+                    isWatering = targetState.isWatering;
+                    particleSystem.visible = isWatering;
+                    updateWaterButton();
+                    if (isWatering && !previousWateringState) { resetWaterParticles(); }
+
+                    console.log(`Replay Step ${replayStepIndex + 1}: Sending physical commands.`);
+                    // Send commands for the new target state
+                    sendPhysicalCommandsForState(targetState);
+
+                    transitionStartTime = performance.now(); // Reset timer for new transition
+                    transitionFrameId = requestAnimationFrame(animateTransitionStep);
+                } else {
+                    endReplay(); // All steps completed
+                }
+            }
+        }
+
+        function endReplay() {
+            isReplaying = false;
+            startState = null; // Clear interpolation states
+            targetState = null;
+            if (transitionFrameId) {
+                cancelAnimationFrame(transitionFrameId);
+                transitionFrameId = null;
+            }
+            toggleUIControls(true); // Re-enable manual controls
+            replayStatusDiv.style.display = 'none';
+
+            // Optionally, set the 3D model and UI to the final state of the sequence
+            if (savedSequence.length > 0) {
+                const finalState = savedSequence[savedSequence.length - 1];
+                servoBase.rotation.y = THREE.MathUtils.degToRad(finalState.baseRotation);
+                arm1Pivot.rotation.x = THREE.MathUtils.degToRad(finalState.arm1Pitch); // UI pitch
+                waterBaseSpeed = finalState.waterSpeed;
+                isWatering = finalState.isWatering;
+                particleSystem.visible = isWatering;
+
+                updateSliderDisplays(); // Update all displays, including physical arm angle
+                // Ensure sliders reflect the final UI state
+                baseRotationSlider.value = finalState.baseRotation.toFixed(0);
+                arm1PitchSlider.value = finalState.arm1Pitch.toFixed(0); // UI pitch for slider
+                waterSpeedSlider.value = finalState.waterSpeed.toFixed(0);
+                updateWaterButton();
+
+                console.log("Replay finished. Sending final physical state to ESP32.");
+                sendPhysicalCommandsForState(finalState); // Ensure physical arm is at final position
+            }
+        }
+
+        function toggleUIControls(enabled) {
+            espIpAddressInput.disabled = !enabled;
+            baseRotationSlider.disabled = !enabled;
+            arm1PitchSlider.disabled = !enabled;
+            waterSpeedSlider.disabled = !enabled;
+            waterToggleButton.disabled = !enabled;
+            savePositionButton.disabled = !enabled;
+            // Replay and Clear buttons depend on sequence length even when controls are enabled
+            replaySequenceButton.disabled = !enabled || savedSequence.length === 0;
+            clearSequenceButton.disabled = !enabled || savedSequence.length === 0;
+            orbitControls.enabled = enabled; // Allow camera control
+        }
+
+        // --- Animation & Update ---
+        function animate() {
+            requestAnimationFrame(animate);
+            if (!isReplaying) { // Only update orbit controls if not replaying (to prevent interference)
+                orbitControls.update();
+            }
+            if (isWatering && particleSystem.visible) {
+                 updateWaterParticles();
+            }
+            renderer.render(scene, camera);
+        }
+
+        // --- Water Particle Logic ---
+        function updateWaterParticles() {
+            if (!particleSystem || !particleSystem.visible) return;
+
+            const positionsAttribute = particleSystem.geometry.attributes.position;
+            const positionsArray = positionsAttribute.array;
+            const velocitiesArray = particleSystem.geometry.userData.velocities;
+
+            const emitterWorldPosition = new THREE.Vector3();
+            const emitterWorldQuaternion = new THREE.Quaternion();
+            const emitterWorldDirection = new THREE.Vector3();
+
+            arm1Emitter.getWorldPosition(emitterWorldPosition);
+            arm1Emitter.getWorldQuaternion(emitterWorldQuaternion);
+            // Assuming emitter points along its local Y axis initially
+            emitterWorldDirection.set(0, 1, 0).applyQuaternion(emitterWorldQuaternion).normalize();
+
+            const gravity = new THREE.Vector3(0, -9.8, 0); // m/s^2
+            const damping = 0.98; // Air resistance / energy loss
+            const dt = 0.016; // Time step (approx 60 FPS)
+            let textureNeedsUpdate = false;
+
+            for (let i = 0; i < waterParticleCount; i++) {
+                const index = i * 3;
+                let pVelocity = velocitiesArray[i]; // This is a THREE.Vector3
+
+                let pX = positionsArray[index];
+                let pY = positionsArray[index + 1];
+                let pZ = positionsArray[index + 2];
+
+                // 1. Ground collision and reset
+                if (pY < 0 && pVelocity.y < 0) { // Check if it's moving downwards when hitting ground
+                    // Wet the lawn
+                    const hitX = pX;
+                    const hitZ = pZ;
+                    const texX = Math.floor(((hitX / lawnWidth) + 0.5) * lawnTextureSize);
+                    const texY = Math.floor(((-hitZ / lawnHeight) + 0.5) * lawnTextureSize); // Z is inverted for texture
+                    if (texX >= 0 && texX < lawnTextureSize && texY >= 0 && texY < lawnTextureSize) {
+                        lawnTextureContext.fillStyle = wetLawnColor;
+                        lawnTextureContext.beginPath();
+                        lawnTextureContext.arc(texX, texY, 2, 0, Math.PI * 2); // Small wet spot
+                        lawnTextureContext.fill();
+                        textureNeedsUpdate = true;
+                    }
+
+                    // Reset particle to emitter
+                    positionsArray[index]     = emitterWorldPosition.x;
+                    positionsArray[index + 1] = emitterWorldPosition.y;
+                    positionsArray[index + 2] = emitterWorldPosition.z;
+                    pVelocity.set(0, 0, 0); // Mark as ready for re-emission
+                }
+
+                // 2. Emit new particles (or re-emit reset ones)
+                if (pVelocity.lengthSq() === 0) { // Particle is at rest (ready to be emitted)
+                    // Ensure it's exactly at emitter (might have been reset slightly off)
+                    positionsArray[index]     = emitterWorldPosition.x;
+                    positionsArray[index + 1] = emitterWorldPosition.y;
+                    positionsArray[index + 2] = emitterWorldPosition.z;
+
+                    const speedVariation = waterBaseSpeed * 0.2; // 20% speed variation
+                    const currentSpeed = waterBaseSpeed + (Math.random() - 0.5) * speedVariation;
+                    const spreadFactor = 0.2; // Adjust for wider or narrower spray
+
+                    pVelocity.copy(emitterWorldDirection)
+                           .multiplyScalar(currentSpeed)
+                           .add(new THREE.Vector3( // Add random spread
+                               (Math.random() - 0.5) * spreadFactor * currentSpeed,
+                               (Math.random() - 0.5) * spreadFactor * currentSpeed * 0.5, // Less vertical spread
+                               (Math.random() - 0.5) * spreadFactor * currentSpeed
+                           ));
+                }
+
+                // 3. Move active particles
+                if (pVelocity.lengthSq() > 0) {
+                    pVelocity.addScaledVector(gravity, dt); // Apply gravity
+                    pVelocity.multiplyScalar(damping);      // Apply damping
+
+                    positionsArray[index]     += pVelocity.x * dt;
+                    positionsArray[index + 1] += pVelocity.y * dt;
+                    positionsArray[index + 2] += pVelocity.z * dt;
+                }
+            }
+
+            positionsAttribute.needsUpdate = true;
+            if (textureNeedsUpdate) {
+                lawnTexture.needsUpdate = true;
+            }
+        }
+        function resetWaterParticles() {
+             if (!particleSystem) return;
+             const positions = particleSystem.geometry.attributes.position.array;
+             const velocities = particleSystem.geometry.userData.velocities; // Array of Vector3
+             const emitterWorldPosition = new THREE.Vector3();
+             arm1Emitter.getWorldPosition(emitterWorldPosition);
+
+             for (let i = 0; i < waterParticleCount; i++) {
+                 const index = i * 3;
+                 positions[index] = emitterWorldPosition.x;
+                 positions[index + 1] = emitterWorldPosition.y;
+                 positions[index + 2] = emitterWorldPosition.z;
+                 if (velocities[i]) {
+                    velocities[i].set(0, 0, 0); // Reset velocity vector
+                 }
+             }
+             particleSystem.geometry.attributes.position.needsUpdate = true;
+        }
+
+        // --- Event Handlers ---
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        // --- Start ---
+         window.onload = function() {
+            init();
+            animate();
+        };
+    </script>
+</body>
+</html>
